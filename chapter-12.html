@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3e9">
+  <meta name="description" content="Chapter 12 traces the emergence of KNOT from the study design, student accounts, course evidence, and discussion.">
+  <title>Chapter 12 · Emergence of KNOT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .chapter-twelve{--knot-green:#496b50;--knot-rust:#b85c43;--knot-paper:#fffaf1;--knot-line:#d9d0bf}
+    .chapter-twelve .synthesis-art{position:relative;min-height:340px;display:grid;place-items:center;border-radius:48% 42% 48% 42%;background:radial-gradient(circle at 50% 50%,#f9e7c5 0 18%,transparent 18.5%),linear-gradient(145deg,#dce9db,#f2e5cf 58%,#e8d5bd);color:#314638}
+    .chapter-twelve .synthesis-art .orbit{position:absolute;border:1px solid #71816f88;border-radius:50%;width:80%;height:64%;transform:rotate(-24deg)}
+    .chapter-twelve .synthesis-art .orbit.two{width:62%;height:88%;transform:rotate(34deg)}
+    .chapter-twelve .synthesis-art .core{z-index:1;text-align:center;font:700 1.15rem/1.45 'Merriweather',serif}
+    .chapter-twelve .synthesis-art .node{position:absolute;background:#fff9ed;border:1px solid #c9b99d;border-radius:999px;padding:.55rem .8rem;font-size:.78rem;box-shadow:0 4px 16px #3e493018}
+    .chapter-twelve .synthesis-art .n1{top:12%;left:9%}.chapter-twelve .synthesis-art .n2{top:14%;right:5%}.chapter-twelve .synthesis-art .n3{bottom:14%;left:5%}.chapter-twelve .synthesis-art .n4{bottom:10%;right:7%}
+    .chapter-twelve .chapter-nav{align-self:start}
+    .chapter-twelve .evidence-grid,.chapter-twelve .principle-grid,.chapter-twelve .boundary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1.35rem 0}
+    .chapter-twelve .evidence-card,.chapter-twelve .principle-card,.chapter-twelve .boundary-card{padding:1.05rem;border:1px solid var(--knot-line);border-radius:1rem;background:var(--knot-paper)}
+    .chapter-twelve .evidence-card h3,.chapter-twelve .principle-card h3,.chapter-twelve .boundary-card h3{margin:.3rem 0;color:#405b48;font-size:1rem}
+    .chapter-twelve .evidence-card p,.chapter-twelve .principle-card p,.chapter-twelve .boundary-card p{margin:.35rem 0 0;font-size:.9rem}
+    .chapter-twelve .evidence-card .number{display:block;color:#405b48;font:700 1.45rem 'Merriweather',serif}
+    .chapter-twelve .framework-figure{margin:1.5rem 0;padding:1.25rem;border:1px solid var(--knot-line);border-radius:1rem;background:#fffaf1;box-shadow:0 8px 22px #3e49300b}
+    .chapter-twelve .framework-figure figcaption{margin-top:1rem;color:#5f645b;font-size:.88rem;line-height:1.65}
+    .chapter-twelve .framework-loop{display:grid;grid-template-columns:repeat(4,1fr);gap:.65rem;margin:1rem 0}
+    .chapter-twelve .framework-loop div{padding:.9rem;border:1px solid #d9d0bf;border-radius:.8rem;background:#f6f1e6}
+    .chapter-twelve .framework-loop strong{display:block;color:#405b48}
+    .chapter-twelve .framework-loop small{display:block;margin-top:.35rem;color:#5f645b;line-height:1.5}
+    .chapter-twelve .framework-loop .loop-center{grid-column:1/-1;text-align:center;background:#e9eee5;border-color:#c5d0c1}
+    .chapter-twelve .lens-note,.chapter-twelve .limit-callout,.chapter-twelve .answer-callout{margin:1.15rem 0;padding:1rem 1.15rem;border-radius:0 .8rem .8rem 0;line-height:1.7}
+    .chapter-twelve .lens-note{border-left:4px solid #b78250;background:#f5ecdc}
+    .chapter-twelve .limit-callout{border-left:4px solid #aa7652;background:#f5ecdc}
+    .chapter-twelve .answer-callout{border-left:4px solid #496b50;background:#e9eee5}
+    .chapter-twelve .evidence-table-wrap{overflow-x:auto;margin:1.2rem 0}
+    .chapter-twelve table{width:100%;border-collapse:collapse;background:#fffaf1;font-size:.9rem}
+    .chapter-twelve th,.chapter-twelve td{padding:.75rem;border:1px solid #d9d0bf;text-align:left;vertical-align:top}
+    .chapter-twelve th{background:#e9eee5;color:#354d3e}
+    .chapter-twelve .qual-quote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid #b78250;background:#f5ecdc;border-radius:0 .8rem .8rem 0}
+    .chapter-twelve .qual-quote blockquote{margin:0;font:italic 1rem/1.65 'Merriweather',serif}
+    .chapter-twelve .qual-quote figcaption{margin-top:.45rem;font-size:.82rem;color:#5f645b}
+    @media(max-width:680px){.chapter-twelve .synthesis-art{min-height:280px}.chapter-twelve .synthesis-art .node{font-size:.68rem;padding:.4rem .5rem}.chapter-twelve .framework-loop{grid-template-columns:1fr}.chapter-twelve .framework-loop .loop-center{grid-column:auto}}
+  </style>
+</head>
+<body class="chapter-page chapter-twelve">
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="KNOT home"><span class="brand-mark" aria-hidden="true">k</span><span class="brand-name">KNOT</span></a>
+    <nav aria-label="Main navigation"><a class="nav-link" href="./contents.html">Notebook index <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="chapter-hero" id="top" aria-labelledby="chapter-title">
+      <div class="chapter-hero-copy">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Chapter 12 <span class="hero-kicker">From evidence to framework</span></p>
+        <h1 id="chapter-title">Emergence of KNOT</h1>
+        <p class="chapter-lede">KNOT did not appear as a finished model. It took shape across exploration, design, classroom evidence, student accounts, and the questions that remained after the analysis.</p>
+        <a class="chapter-scroll" href="#section-12-1">Follow the emergence <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art synthesis-art" role="img" aria-label="A recursive learning process brings a meaningful problem, computational thinking, student sense-making, and renewed inquiry around knowledge construction.">
+        <span class="orbit"></span><span class="orbit two"></span><span class="core">Knowledge<br>construction<br>keeps moving</span>
+        <span class="node n1">Meaningful problem</span><span class="node n2">CT practices</span><span class="node n3">Uncertainty and support</span><span class="node n4">New question</span>
+      </div>
+    </section>
+    <div class="chapter-opening-quote data-opening"><p>The study points to learning as connected work: students encounter a problem, make an idea visible, try ways through it, explain what they understand, and carry that understanding into another question. KNOT gives this pattern a name and a design shape.</p></div>
+    <div class="chapter-layout data-layout">
+      <aside class="chapter-nav" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#section-12-1"><span>12.1</span><strong>How KNOT emerged</strong></a>
+        <a href="#section-12-2"><span>12.2</span><strong>What the evidence says</strong></a>
+        <a href="#section-12-3"><span>12.3</span><strong>The KNOT framework</strong></a>
+        <a href="#section-12-4"><span>12.4</span><strong>What makes the cycle work</strong></a>
+        <a href="#section-12-5"><span>12.5</span><strong>Answering the research question</strong></a>
+        <a href="#section-12-6"><span>12.6</span><strong>The final framework</strong></a>
+      </aside>
+      <article class="chapter-content">
+        <section id="section-12-1">
+          <p class="section-label">12.1 · The path to a framework</p>
+          <h2>KNOT emerged through successive questions</h2>
+          <p>The earlier chapters record a progression rather than a single moment of invention. From 2022 to 2025, the work moved through three research stages, each with a different student batch: initial classroom exploration and feedback in Chapter 5, the pilot study in Chapter 6, and the official study documented in Chapters 8–11. The pilot tested ideas while the questions and survey items were still being refined, and it helped shape KNOT Framework Version 0 in Chapter 7. The official study followed with a clearer research design for examining how knowledge construction was supported and evidenced within the integrated Problem-Based Learning (PBL) and Computational Thinking (CT) course.</p>
+          <p>Chapters 9 and 10 bring together the quantitative course and survey records, the course-delivery map, final-study case and lab materials, project portfolios, and students’ written accounts. Chapter 11 interprets these sources against the research questions. This chapter draws those strands together to explain what KNOT means in light of the learning opportunities and students’ experiences.</p>
+          <div class="answer-callout"><strong>Working meaning.</strong> KNOT is a recursive design framework in which meaningful problems invite learners to construct, test, explain, and revise understanding. PBL provides a reason to inquire; CT offers practices for working through problems; and attention to liminality helps a teacher recognize that uncertainty can accompany changing understanding.</div>
+        </section>
+
+        <section id="section-12-2">
+          <p class="section-label">12.2 · What the study contributes</p>
+          <h2>Different evidence sources illuminate different parts</h2>
+          <p>No single measure tells the whole story. Course and task materials describe the opportunities designed for students; records describe performance; survey ratings describe perceptions; and open responses show how students explained their experiences. Read together, these sources show how the course supported self-directed learning, problem solving, transfer of knowledge, and the construction of connected understanding.</p>
+          <div class="evidence-grid">
+            <div class="evidence-card"><span class="number">124</span><h3>Survey response records</h3><p>The quantitative and open-ended survey records show generally positive but not uniform perceptions. There are 123 distinct IDs among the 124 response records. Ten open prompts yielded 1,237 non-empty responses.</p></div>
+            <div class="evidence-card"><span class="number">128</span><h3>Concept-understanding submissions</h3><p>Students rated understanding across 37 topics. Ratings varied by topic, reminding us that a course-wide summary can conceal where concepts felt clearer or remained difficult.</p></div>
+            <div class="evidence-card"><span class="number">120</span><h3>Project evaluation records</h3><p>Project records show students reporting choices of data structures, algorithms, and efficiency analysis in a course-related application. The source includes 115 distinct student IDs and repeated submissions.</p></div>
+            <div class="evidence-card"><span class="number">Course materials</span><h3>Case studies and lab sheets</h3><p>The final-study prompts show how students were asked to frame problems, make assumptions, represent systems, consider efficiency, code, compare, and reflect.</p></div>
+            <div class="evidence-card"><span class="number">129 / 128</span><h3>Theory and lab CIE records</h3><p>Theory CIE mean was 37.45/50 (n=129); lab CIE mean was 67.75/80 (n=128). For 128 matched records, the combined mean was 105.49/130. Together, the theory and lab components show assessed performance across written, activity, and practical work.</p></div>
+          </div>
+          <p class="data-quality-note"><strong>Reading the counts.</strong> The three stages used three different student batches. The figures above describe the official-study batch; within it, counts vary by evidence source because survey responses, project submissions, and course records were not available for every student. Each figure describes the records used for that analysis. The exploration and pilot counts belong to their own batches and are not pooled with the official-study data.</p>
+          <div class="evidence-table-wrap">
+            <table>
+              <thead><tr><th>Evidence in Chapters 9–11</th><th>What it adds to KNOT</th><th>How to read the evidence</th></tr></thead>
+              <tbody>
+                <tr><td>Survey ratings and concept-understanding self-ratings</td><td>Students’ reports connect self-directed learning, problem solving, and transfer to knowledge construction, with variation across students and topics.</td><td>Open responses add examples of how students described making those connections.</td></tr>
+                <tr><td>Theory and lab CIE scores</td><td>Course performance across written, activity, and practical components gives an assessed account of student work.</td><td>Scores show performance across several forms of learning and assessment.</td></tr>
+                <tr><td>Project records and evaluations</td><td>Project choices and portfolio examples show students applying course ideas to a larger task.</td><td>Project feedback connects this application to students’ reported learning.</td></tr>
+                <tr><td>Final-study case studies, lab sheets, and delivery notes</td><td>They show how the course turned familiar or realistic situations into opportunities to formulate a problem, represent it, reason about choices, and reflect.</td><td>Students’ reports of relating algorithms to real-world systems connect the intended design to their experience.</td></tr>
+                <tr><td>Ten open survey prompts</td><td>Students described connecting ideas, working through difficulty, seeking support, and using concepts in applications.</td><td>The themes show the processes students associated with knowledge construction.</td></tr>
+                <tr><td>Sixteen liminality case studies used in the pilot and official study</td><td>They provide learning contexts for interpreting uncertainty and transitions.</td><td>Official-study survey feedback and student accounts describe reflection and perceived movement through learning; the feedback is not attributed to individual case titles.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <figure class="qual-quote"><blockquote>“...classroom concepts like algorithms and graph structures become meaningful when applied to real projects. Breaking complex problems into smaller parts helped me understand them better and find practical solutions.”</blockquote><figcaption>Student describing how project application and decomposition helped make course ideas meaningful; excerpt from open response to survey item 36.</figcaption></figure>
+          <figure class="qual-quote"><blockquote>“The sorting was one such where now I don't have to see the code or looping conditions because of the handouts provided and the activity conducted in the class.”</blockquote><figcaption>Student describing how a sorting activity made code and loop conditions understandable; open response to survey item 37.</figcaption></figure>
+          <p>These accounts make the process of learning more visible: linking ideas, practising, and explaining. The project-feedback responses connect task design to reported application. For example, 120 of 124 respondents agreed or strongly agreed that the project helped them see how algorithms relate to real-world systems, and one open response describes using graph theory to plan connected city roads. Together with concept ratings and course scores, these accounts show how self-directed learning, problem solving, and transfer contributed to the broader process of knowledge construction.</p>
+        </section>
+
+        <section id="section-12-3">
+          <p class="section-label">12.3 · The framework taking shape</p>
+          <h2>KNOT holds the elements in relationship</h2>
+          <p>KNOT stands for <em>Knowledge construction, Not a One-time Transformation</em>. Knowledge construction sits at the centre. The surrounding elements describe conditions and practices that can help students make and remake meaning. They are connected parts of a framework, not a checklist or a guaranteed sequence.</p>
+          <p>The 2025 teaching materials help make this design logic concrete. The Hungry Loop Cafe case turns repeated price questions and system slowdown into a reason to consider data organization and efficiency. The Invitation Problem asks learners to model places, routes, costs, and constraints before generalizing a solution. Lab 02 moves from everyday grouping and shared-expense problems to programming and comparing alternative solutions. Together with student feedback about applying graph theory to city roads, these materials show why KNOT needs both a meaningful problem and visible opportunities to reason, inspect, explain, and connect ideas.</p>
+          <figure class="framework-figure">
+            <span class="figure-title">Figure 12.1 · KNOT as a recursive design framework</span>
+            <div class="framework-loop" role="img" aria-label="A recurring cycle: encounter a meaningful problem; represent, decompose, and question it; explore, test, explain, and revise; connect and apply understanding; return to a new question. Responsive support surrounds the cycle, and knowledge construction is its centre. Liminality is a lens across the cycle.">
+              <div><strong>1 · Encounter</strong><small>A meaningful, situated problem gives inquiry a purpose.</small></div>
+              <div><strong>2 · Make it workable</strong><small>Represent, question, decompose, and notice patterns.</small></div>
+              <div><strong>3 · Construct and check</strong><small>Use CT practices to propose, test, explain, and revise ideas.</small></div>
+              <div><strong>4 · Connect and reopen</strong><small>Apply or relate the idea; a new context can begin another inquiry.</small></div>
+              <div class="loop-center"><strong>At the centre: knowledge construction</strong><small>Understanding is made, expressed, examined, and revisited. Liminality is a lens for noticing uncertainty and transition across the cycle, not a required stage.</small></div>
+            </div>
+            <figcaption>Responsive scaffolding, dialogue, resources, practice, and feedback can support learners throughout. The arrows implied by the cycle indicate possible returns and new questions, not a rigid lesson plan. A teacher may begin at different points and adapt the work to the learners and subject.</figcaption>
+          </figure>
+          <div class="principle-grid">
+            <div class="principle-card"><h3>PBL gives inquiry a purpose</h3><p>A real or realistic problem provides context, invites questions, and gives students a reason to use ideas.</p></div>
+            <div class="principle-card"><h3>CT makes reasoning visible</h3><p>Decomposition, pattern recognition, abstraction, algorithmic thinking, and checking help learners work with complexity and make their reasoning discussable.</p></div>
+            <div class="principle-card"><h3>Liminality helps interpret uncertainty</h3><p>Difficulty, partial understanding, and shifts in explanation may be part of learning. Students need not pass through identical or fixed stages.</p></div>
+            <div class="principle-card"><h3>Support keeps inquiry productive</h3><p>Prompts, examples, peer and teacher dialogue, resources, practice, and feedback help students continue without removing the need to think.</p></div>
+          </div>
+        </section>
+
+        <section id="section-12-4">
+          <p class="section-label">12.4 · Designing for the cycle</p>
+          <h2>What a teacher can do with KNOT</h2>
+          <p>KNOT is intended to guide design decisions, not prescribe one correct class format. The study suggests several questions that can help a teacher plan and reflect:</p>
+          <ol>
+            <li><strong>What meaningful problem will give students a reason to engage?</strong> Make the context understandable and leave room for students to ask questions.</li>
+            <li><strong>What thinking should become visible?</strong> Ask students to represent the problem, explain a choice, trace a process, compare approaches, or justify efficiency.</li>
+            <li><strong>Where might learners become uncertain?</strong> Anticipate likely sticking points and provide ways to seek help, test a small example, revisit a resource, or work with a peer.</li>
+            <li><strong>How will students check and communicate an idea?</strong> Include opportunities to test, receive feedback, revise, and explain why a solution works.</li>
+            <li><strong>Where can the idea travel next?</strong> Invite application to a changed context and notice when a new problem requires learners to revisit what they thought they knew.</li>
+          </ol>
+          <aside class="lens-note"><strong>Reading learning transitions.</strong> Liminality helps a teacher attend to unsettled or changing understanding. It should not be used to label a student as being in a fixed stage, nor should struggle be treated as proof that learning has occurred. Evidence of the learner’s explanation, decisions, and revision still matters.</aside>
+          <p>Self-directed learning, problem solving, and transfer of knowledge are central capacities in this design. The survey, student accounts, project evaluations, concept ratings, and course scores provide evidence of how these capacities were experienced and demonstrated in the course. Together, they show how these learning dimensions contributed to the emergence of KNOT’s account of knowledge construction.</p>
+        </section>
+
+        <section id="section-12-5">
+          <p class="section-label">12.5 · Completing the loop</p>
+          <h2>What the study can say about the main question</h2>
+          <p>The main research question asks how knowledge construction was supported and evidenced within a PBL–CT integrated course for computer science students. Across the evidence, course materials show opportunities to work with meaningful problems, reason with course concepts, practise and check solutions, and connect ideas. Project-feedback items and open responses show that students reported using course concepts in projects and relating algorithms to real systems. Course records add assessed performance; survey and open responses add students’ perceptions and accounts.</p>
+          <p>Together, these findings suggest that KNOT is a useful way to organize and interpret the design relationships in this course. PBL creates a purposeful setting for inquiry; CT practices give students ways to work on problems and articulate reasoning; responsive support helps them continue through uncertainty; and reflection, checking, explanation, and application make developing understanding available for examination.</p>
+          <p>The strongest conclusion is about the framework’s design logic and the forms of support students described and encountered. Students did not all follow an identical cycle, and the course elements worked together. The study’s contribution is to show how these connected elements supported students as they made sense of concepts, solved problems, and carried ideas into new contexts.</p>
+          <div class="answer-callout"><strong>In answer to the research question:</strong> the study indicates that an integrated PBL–CT course can support knowledge construction by giving students purposeful problems and structured ways to reason, test, connect, explain, and revisit ideas, with support available as understanding changes. KNOT brings these relationships together as a recursive framework for designing and reflecting on learning.</div>
+        </section>
+
+        <section id="section-12-6">
+          <p class="section-label">12.6 · The final framework</p>
+          <h2>KNOT brings the study’s findings into one account</h2>
+          <p>KNOT places knowledge construction at the centre, with PBL and CT as connected contributions. Liminality offers a way to understand uncertainty and transition. Responsive scaffolding, opportunities to explain and test ideas, and applications across contexts support the work students do as they build and connect understanding.</p>
+          <div class="boundary-grid">
+            <div class="boundary-card"><h3>What this study supports</h3><p>A coherent account of how the course supported self-directed learning, problem solving, transfer of knowledge, and knowledge construction.</p></div>
+            <div class="boundary-card"><h3>What the evidence shows together</h3><p>Student feedback, concept ratings, project work, course scores, and designed learning activities describe complementary parts of the same learning experience.</p></div>
+            <div class="boundary-card"><h3>What teachers can do</h3><p>Use KNOT to plan meaningful problems, support students’ reasoning, observe their thinking, and help them connect learning to new contexts.</p></div>
+          </div>
+          <p>The final KNOT framework is the outcome of this research journey. It brings the study’s central insight into a form teachers can carry into planning, teaching, assessment, and reflection.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer chapter-footer"><span>KNOT <span class="footer-dot" aria-hidden="true">·</span> Learning, revisited.</span><a href="./chapter-13.html">Chapter 13 · The KNOT's Philosophy <span aria-hidden="true">→</span></a></footer>
+</body>
+</html>

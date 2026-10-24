@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3e9">
+  <meta name="description" content="Chapter 11 discusses the findings in relation to the research questions, student experience, and KNOT Framework Version 0.">
+  <title>Discussion | KNOT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .chapter-eleven .discussion-art{position:relative;min-height:340px;display:grid;place-items:center;border-radius:48% 42% 48% 42%;background:radial-gradient(circle at 50% 50%,#f9e7c5 0 16%,transparent 16.5%),linear-gradient(145deg,#dce9db,#f2e5cf 58%,#e8d5bd);color:#314638}
+    .discussion-art .orbit{position:absolute;border:1px solid #71816f88;border-radius:50%;width:80%;height:64%;transform:rotate(-24deg)}.discussion-art .orbit.two{width:62%;height:88%;transform:rotate(34deg)}
+    .discussion-art .core{z-index:1;text-align:center;font:700 1.18rem/1.5 'Merriweather',serif}.discussion-art .node{position:absolute;background:#fff9ed;border:1px solid #c9b99d;border-radius:999px;padding:.55rem .8rem;font-size:.78rem;box-shadow:0 4px 16px #3e493018}.discussion-art .n1{top:12%;left:12%}.discussion-art .n2{top:16%;right:8%}.discussion-art .n3{bottom:17%;left:5%}.discussion-art .n4{bottom:11%;right:9%}
+    .chapter-eleven .figure-panel{margin:1.5rem 0;padding:1.25rem;border:1px solid #d9d0bf;border-radius:1rem;background:#fffaf1;box-shadow:0 8px 22px #3e49300b}.chapter-eleven .figure-panel figcaption{margin-top:1rem;color:#5f645b;font-size:.88rem;line-height:1.65}.chapter-eleven .figure-title{display:block;margin-bottom:.7rem;color:#405b48;font:700 1.05rem 'Merriweather',serif}
+    .chapter-eleven .story-flow,.chapter-eleven .learning-flow{display:flex;align-items:stretch;gap:.55rem;flex-wrap:wrap;margin:1rem 0}.chapter-eleven .story-flow>div,.chapter-eleven .learning-flow>div{flex:1 1 135px;padding:.95rem;border-radius:.8rem;background:#e9eee5}.chapter-eleven .story-flow strong,.chapter-eleven .learning-flow strong{display:block;margin-bottom:.35rem;color:#354d3e}.chapter-eleven .story-flow p,.chapter-eleven .learning-flow p{margin:0;font-size:.87rem}.chapter-eleven .story-flow i,.chapter-eleven .learning-flow i{align-self:center;color:#8c6342;font-style:normal;font-size:1.3rem}
+    .chapter-eleven .chart{display:grid;gap:.65rem;margin:1rem 0}.chapter-eleven .chart-row{display:grid;grid-template-columns:minmax(150px,1.2fr) minmax(110px,2fr) 3.4rem;gap:.65rem;align-items:center;font-size:.87rem}.chapter-eleven .chart-track{height:14px;overflow:hidden;border-radius:99px;background:#e8e3d7}.chapter-eleven .chart-bar{height:100%;border-radius:99px;background:linear-gradient(90deg,#71866b,#496b50)}.chapter-eleven .chart-bar.rust{background:linear-gradient(90deg,#d3a078,#b85c43)}.chapter-eleven .chart-value{font-weight:700;color:#405b48;text-align:right}.chapter-eleven .chart-legend{display:flex;gap:.7rem;flex-wrap:wrap;font-size:.82rem;color:#5f645b}.chapter-eleven .legend-dot{display:inline-block;width:.65rem;height:.65rem;border-radius:50%;margin-right:.3rem;background:#496b50}.chapter-eleven .legend-dot.rust{background:#b85c43}
+    .chapter-eleven .stat-grid,.chapter-eleven .insight-grid,.chapter-eleven .evidence-grid,.chapter-eleven .gap-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:1rem;margin:1.4rem 0}.chapter-eleven .stat-card,.chapter-eleven .insight-card,.chapter-eleven .evidence-card,.chapter-eleven .gap-card{padding:1.05rem;border:1px solid #d9d0bf;border-radius:1rem;background:#fffaf1}.chapter-eleven .stat-card strong{display:block;color:#405b48;font:700 1.65rem 'Merriweather',serif}.chapter-eleven .stat-card span,.chapter-eleven .evidence-card span{display:block;margin-top:.35rem;font-size:.86rem;color:#5f645b}.chapter-eleven .insight-card h3,.chapter-eleven .evidence-card h3,.chapter-eleven .gap-card h3{margin:.35rem 0;color:#405b48;font-size:1rem}.chapter-eleven .insight-card p,.chapter-eleven .evidence-card p,.chapter-eleven .gap-card p{margin:.35rem 0 0;font-size:.9rem}
+    .chapter-eleven .qual-quote{margin:1rem 0;padding:1rem 1.2rem;border-left:4px solid #b78250;background:#f5ecdc;border-radius:0 .8rem .8rem 0}.chapter-eleven .qual-quote blockquote{margin:0;font:italic 1rem/1.65 'Merriweather',serif}.chapter-eleven .qual-quote figcaption{margin-top:.45rem;font-size:.82rem;color:#5f645b}
+    .chapter-eleven .answer-callout{margin:1.15rem 0;padding:1rem 1.15rem;border-left:4px solid #496b50;background:#e9eee5;border-radius:0 .8rem .8rem 0}.chapter-eleven .framework-loop{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin:1.3rem 0}.chapter-eleven .framework-loop div{padding:.9rem;border:1px solid #d9d0bf;border-radius:.8rem;background:#fffaf1}.chapter-eleven .framework-loop strong{display:block;color:#405b48}.chapter-eleven .framework-loop small{display:block;margin-top:.35rem;color:#5f645b;line-height:1.5}.chapter-eleven .chapter-content h3{margin-top:1.25rem}
+    @media(max-width:680px){.chapter-eleven .discussion-art{min-height:280px}.discussion-art .node{font-size:.7rem;padding:.4rem .55rem}.chapter-eleven .chart-row{grid-template-columns:minmax(115px,1.1fr) minmax(75px,1.5fr) 3rem;font-size:.78rem}.chapter-eleven .framework-loop{grid-template-columns:1fr}.chapter-eleven .story-flow i,.chapter-eleven .learning-flow i{display:none}}
+  </style>
+</head>
+<body class="chapter-page chapter-ten chapter-eleven">
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="KNOT home"><span class="brand-mark" aria-hidden="true">k</span><span class="brand-name">KNOT</span></a>
+    <nav aria-label="Main navigation"><a class="nav-link" href="./contents.html">Notebook index <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="chapter-hero" id="top" aria-labelledby="chapter-title">
+      <div class="chapter-hero-copy">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Chapter 11 <span class="hero-kicker">Bringing the study together</span></p>
+        <h1 id="chapter-title">Discussion</h1>
+        <p class="chapter-lede">From the questions that shaped the study, through what students experienced and reported, to what the evidence now lets us say about knowledge construction.</p>
+        <a class="chapter-scroll" href="#section-11-1">Read the discussion <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art discussion-art" role="img" aria-label="A recursive learning cycle links a meaningful problem, student reasoning, developing understanding, and renewed inquiry.">
+        <span class="orbit"></span><span class="orbit two"></span><span class="core">Knowledge<br>construction<br>in motion</span>
+        <span class="node n1">A problem</span><span class="node n2">A question</span><span class="node n3">A new explanation</span><span class="node n4">Another context</span>
+      </div>
+    </section>
+    <div class="chapter-opening-quote data-opening"><p>The story of this study is not that every student moved neatly from confusion to mastery. It is that students described different ways of working on ideas: making a process visible, trying a strategy, asking why, connecting concepts, and returning to a question when their first explanation was not enough.</p></div>
+    <div class="chapter-layout data-layout">
+      <aside class="chapter-nav" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#section-11-1"><span>11.1</span><strong>The story and evidence</strong></a>
+        <a href="#section-11-2"><span>11.2</span><strong>Main research question</strong></a>
+        <a href="#section-11-3"><span>11.3</span><strong>SRQ1 · Design features</strong></a>
+        <a href="#section-11-4"><span>11.4</span><strong>SRQ2 · Reports and evidence</strong></a>
+        <a href="#section-11-5"><span>11.5</span><strong>SRQ3 · Student experience</strong></a>
+        <a href="#section-11-6"><span>11.6</span><strong>SRQ4 · Liminality interpretation</strong></a>
+        <a href="#section-11-7"><span>11.7</span><strong>What KNOT gains</strong></a>
+        <a href="#section-11-8"><span>11.8</span><strong>Evidence and next refinement</strong></a>
+        <a class="back-top" href="#top">Back to top ↑</a>
+      </aside>
+      <article class="chapter-content">
+        <section class="chapter-section" id="section-11-1" aria-labelledby="heading-11-1">
+          <p class="section-number">11.1 <span>The story and the evidence</span></p>
+          <h2 id="heading-11-1">The questions led to a course, the course led to student accounts, and the accounts return us to the framework</h2>
+          <p>The research began with a question about how an integrated PBL–CT course could support knowledge construction. The pilot informed KNOT Version 0. The final study then examined students’ reported learning, their self-reported understanding of course topics, their project choices, and their descriptions of difficult or meaningful moments. Chapters 9 and 10 bring those evidence streams together for this discussion.</p>
+          <figure class="figure-panel" aria-labelledby="fig-11-1-caption">
+            <span class="figure-title">Figure 11.1 · The study’s full loop</span>
+            <div class="story-flow" role="img" aria-label="Research questions guide the integrated course; student activity and outcomes are recorded in data; findings are interpreted through KNOT and inform the final framework.">
+              <div><strong>Questions</strong><p>What design supports learning, and what evidence shows that support?</p></div><i aria-hidden="true">→</i>
+              <div><strong>Course</strong><p>Authentic problems meet computational thinking and reflection.</p></div><i aria-hidden="true">→</i>
+              <div><strong>Student work</strong><p>Students represent, trace, compare, explain, practise and apply.</p></div><i aria-hidden="true">→</i>
+              <div><strong>Evidence</strong><p>Survey responses, topic ratings, projects, scores and open accounts.</p></div><i aria-hidden="true">→</i>
+              <div><strong>Interpretation</strong><p>Findings refine the working KNOT proposition.</p></div>
+            </div>
+            <figcaption id="fig-11-1-caption">This is the integrated logic of the study. Each data source contributes a different view of how the course supported learning.</figcaption>
+          </figure>
+          <div class="evidence-grid" aria-label="Evidence base for the discussion">
+            <article class="evidence-card"><h3>Full course survey</h3><p>124 response records from 123 distinct roll IDs, covering 28 rating items and ten open-ended prompts.</p></article>
+            <article class="evidence-card"><h3>Concept understanding</h3><p>128 submissions across 37 topics. These ratings describe students’ perceived understanding.</p></article>
+            <article class="evidence-card"><h3>Project evaluation</h3><p>120 submissions describing reported project choices and efficiency-analysis coverage.</p></article>
+            <article class="evidence-card"><h3>Sixteen liminality case studies</h3><p>The cases, drawn from nature, history, art, and everyday systems, were used in both the pilot and the official study. Their titles and descriptions appear in <a href="./chapter-6.html#section-6-3-1">Chapter 6</a>; official-study feedback is reported in Chapter 9.</p></article>
+          </div>
+          <p>The research has three stages, each involving a different student batch: initial exploration, pilot study, and official study. The evidence discussed here belongs to the official-study batch. Within that batch, counts vary because some students did not complete the Google survey, submit a project, or continue after getting a year back, and some records have blank items, repeated submissions, or unavailable course data. Each count describes the records available for its analysis; it does not indicate a different batch within the official study. Together, these sources show course-level patterns across student feedback, self-directed learning, problem solving, transfer, project application, and assessed performance.</p>
+          <h3>Evidence map · from question to conclusion</h3>
+          <p>This map lets readers follow each question across the quantitative findings, student accounts, discussion, and final conclusion.</p>
+          <div class="data-table-scroll" tabindex="0" role="region" aria-label="Evidence map linking each research question to Chapters 9, 10, 11, and 15">
+            <table><caption>Table 11.1 · Research question evidence map</caption><thead><tr><th scope="col">Question</th><th scope="col">Chapter 9 · Quantitative evidence</th><th scope="col">Chapter 10 · Student accounts</th><th scope="col">Discussion and conclusion</th></tr></thead><tbody>
+              <tr><th scope="row">Main RQ · How is knowledge construction supported and evidenced?</th><td><a href="./chapter-9.html#section-9-2">Table 9.2</a>, <a href="./chapter-9.html#section-9-3">Tables 9.3 and 9.3A</a>, <a href="./chapter-9.html#section-9-4">Tables 9.4–9.10</a>, and <a href="./chapter-9.html#section-9-5">Tables 9.11–9.13</a></td><td><a href="./chapter-10.html#section-10-2">Themes 1–6</a> and <a href="./chapter-10.html#section-10-3">knowledge-construction synthesis</a></td><td><a href="#section-11-2">11.2</a> → <a href="./chapter-15.html#answer">15.1</a></td></tr>
+              <tr><th scope="row">SRQ1 · Which design features create opportunities for self-direction, problem solving, and transfer?</th><td><a href="./chapter-9.html#section-9-1">Course map</a>, <a href="./chapter-9.html#section-9-2">Table 9.2, Q1–4 and Q27–29</a>, and <a href="./chapter-9.html#section-9-3">Table 9.3A crosswalk</a></td><td><a href="./chapter-10.html#section-10-2">Themes 2, 4, and 6</a></td><td><a href="#section-11-3">11.3</a> → <a href="./chapter-15.html#questions">15.2</a></td></tr>
+              <tr><th scope="row">SRQ2 · What do students report, and what complementary patterns appear?</th><td><a href="./chapter-9.html#section-9-2">Table 9.2</a>, <a href="./chapter-9.html#section-9-3">Table 9.3</a>, <a href="./chapter-9.html#section-9-4">Tables 9.4–9.10</a>, and <a href="./chapter-9.html#section-9-5">Tables 9.11–9.13</a></td><td><a href="./chapter-10.html#section-10-2">Themes 1, 2, 4, 5, and 6</a></td><td><a href="#section-11-4">11.4</a> → <a href="./chapter-15.html#questions">15.2</a></td></tr>
+              <tr><th scope="row">SRQ3 · How do students describe uncertainty, effort, and emerging clarity?</th><td><a href="./chapter-9.html#section-9-2">Table 9.2, Q22–25</a>; open response 26 is analysed in Chapter 10</td><td><a href="./chapter-10.html#section-10-2">Theme 3</a> and <a href="./chapter-10.html#section-10-5">variation and counter-evidence</a></td><td><a href="#section-11-5">11.5</a> → <a href="./chapter-15.html#questions">15.2</a></td></tr>
+              <tr><th scope="row">SRQ4 · How can these accounts be interpreted through liminality?</th><td><a href="./chapter-9.html#section-9-2">Table 9.2, Q9 and Q22–25</a>; read with open response 26</td><td><a href="./chapter-10.html#section-10-2">Theme 3</a> and <a href="./chapter-10.html#section-10-5">varied learning paths</a></td><td><a href="#section-11-6">11.6</a> → <a href="./chapter-15.html#questions">15.2</a></td></tr>
+            </tbody></table>
+          </div>
+        </section>
+
+        <section class="chapter-section" id="section-11-2" aria-labelledby="heading-11-2">
+          <p class="section-number">11.2 <span>Main research question</span></p>
+          <h2 id="heading-11-2">How is knowledge construction supported and evidenced within a PBL–CT integrated course for computer science students?</h2>
+          <p>The clearest answer is about what students did while trying to understand. The problems and projects gave concepts a purpose. The case-study and lab materials show how that purpose was designed: students were asked to infer useful data structures from a cafe's repeated queries, model a local itinerary with costs and constraints, and move from familiar group problems into code and solution review. Computational thinking practices gave students ways to examine those problems: break them down, represent information, trace steps, compare approaches, notice constraints and ask about efficiency. Students’ accounts suggest that ideas became more usable when they could explain a method, test it, and connect it to another topic or situation. In the survey, 120 of 124 respondents agreed or strongly agreed that the project helped them see how algorithms relate to real-world systems, and an open response describes using graph theory to plan connected city roads. Course records add assessed performance context: among 128 students with both CIE records, the mean theory-plus-lab total was 105.49 out of 130. Read together, the student reports and assessed work show complementary evidence of how the course supported knowledge construction.</p>
+          <figure class="figure-panel" aria-labelledby="fig-11-2-caption">
+            <span class="figure-title">Figure 11.2 · A reported pathway through knowledge construction</span>
+            <div class="learning-flow" role="img" aria-label="A non-linear pathway: encounter a problem, represent it, reason and test, explain and connect, apply and revisit. Support can enter at each point.">
+              <div><strong>Encounter</strong><p>A problem or idea raises a question.</p></div><i aria-hidden="true">→</i>
+              <div><strong>Represent</strong><p>Draw, sort, model or trace the process.</p></div><i aria-hidden="true">→</i>
+              <div><strong>Reason and test</strong><p>Compare a strategy and examine why it works.</p></div><i aria-hidden="true">→</i>
+              <div><strong>Explain and connect</strong><p>Relate the idea to other concepts.</p></div><i aria-hidden="true">→</i>
+              <div><strong>Apply and revisit</strong><p>Use it in context; feedback or a new task may reopen inquiry.</p></div>
+            </div>
+            <figcaption id="fig-11-2-caption">The pathway is an interpretation of student accounts, not a fixed sequence. Practice, peers, instructor feedback and resources can support students at any point.</figcaption>
+          </figure>
+          <figure class="qual-quote"><blockquote>“I connected concepts like graph theory shortest path algorithms and optimization techniques to see how they work together in problem solving.”</blockquote><figcaption>Student connecting graph theory, shortest-path algorithms and optimization; open response to survey item 38.</figcaption></figure>
+          <p>The quantitative findings are consistent with positive perceptions, with variation across concepts and students. The highest survey item mean was 4.59 for seeing algorithms as related to real-world systems. The mean was 4.55 for the item about academic and personal growth through course design. On the topic form, 98.4% reported “Completely” or “Mostly” understanding Binary Search Tree, while the corresponding shares were 67.2% for both KMP and Boyer-Moore. Together with the qualitative accounts and course scores, these patterns show where students reported clarity and how their performance varied across the course.</p>
+          <div class="answer-callout"><strong>Answer to the main question.</strong> The integrated course supported knowledge construction through contextual problems, structured reasoning practices, and opportunities to represent, explain, test, and connect ideas. Student accounts show how self-directed learning, problem solving, and transfer of knowledge formed part of this process. Survey patterns, concept ratings, project evidence, and course scores provide complementary evidence of how students experienced and used these opportunities.</div>
+        </section>
+
+        <section class="chapter-section" id="section-11-3" aria-labelledby="heading-11-3">
+          <p class="section-number">11.3 <span>Sub-question 1 · Design elements</span></p>
+          <h2 id="heading-11-3">Which features of the PBL–CT course design created opportunities for self-directed learning, problem solving, and transfer of knowledge?</h2>
+          <p>The study points to design elements that work together to support self-directed learning, problem solving, and transfer of knowledge. Authentic cases and projects connected algorithms to a purpose. Physical and visual activities, small examples and tracing made hidden steps visible. Decomposition, comparison and efficiency questions helped students organise their reasoning. Practice, peer discussion, instructor support and feedback helped students keep working when an idea was unclear. These capacities connect to knowledge construction: students take initiative, build and test a solution, and carry an idea into another context.</p>
+          <p>The final-study case and lab sheets add concrete evidence of how these design elements were put into tasks. The Hungry Loop Cafe problem asks students to formulate frequent questions and reason about why repeated scans slow down as data grows. The Invitation Problem asks students to plan a realistic route, state assumptions, weigh cost and time, then generalize the approach. Lab 02 moves from classifying familiar activities and settling trip expenses in pairs to programming and comparing three LLM-generated solutions, including their prompts and workflows. These are not simply examples attached after instruction: the prompts make problem framing, representation, assumptions, comparison, and reflection part of the work. The survey gives a student-side connection: 96.8% agreed or strongly agreed that the project helped them relate algorithms to real-world systems (Q19), and open responses describe applying graph ideas to city planning. The documents show the intended learning opportunities; the survey shows students’ reported experience of project application.</p>
+          <p>The concept delivery map makes the design more concrete. It records seven primary modes across 37 topics: direct explanation, problem-first inquiry, iterative problem extension, activity with a problem, intuition, intuition with application problems, and intuition through storytelling. The accompanying teaching notes give practical examples: sorting paper chits before formal analysis, changing a graph traversal from a stack to a queue, and using an unbalanced search tree to motivate balancing and rotations. This suggests a design sequence that can move from an intuitive or visible encounter to formal representation, comparison and application. The survey, concept ratings, project work, and course performance give complementary evidence for interpreting how students engaged with these opportunities.</p>
+          <p>Student ratings offer a useful connection to this map. The six topics assigned Activity and Problem had a pooled 91.3% “Completely” or “Mostly” self-rating; six Iterative Problem topics had 89.2%. Ratings across Easy, Medium and Hard classifications were very similar at 84.6%, 84.0% and 84.2%. Read alongside students’ descriptions and the course materials, these patterns help explain how different lesson designs supported engagement with concepts. The modes and complexity levels both contribute to the interpretation.</p>
+          <p>Project choices provide another link between course content and application: the project sheet includes exact selections for 29 of the 37 course topics. For example, students reported Dijkstra in 107 of 120 project submissions, Heap in 106, BFS in 101, and Merge Sort in 80. These are self-reported selections, not verified evidence that a corresponding class lesson produced the project use. The remaining topics have only broader proxies, such as efficiency-analysis reporting or a backtracking selection. The course survey also supports the overall design story: 97.6% agreed or strongly agreed that activities and explanations clarified concepts, while 91.9% said cases and activities strengthened their conceptual foundation. Neither item evaluates a specific mode.</p>
+          <figure class="figure-panel" aria-labelledby="fig-11-3-caption">
+            <span class="figure-title">Figure 11.3 · Design conditions and what they made possible</span>
+            <div class="framework-loop" role="img" aria-label="PBL context supports purpose, CT practices support reasoning, representations support visibility, and responsive scaffolding supports persistence and validation. Together they create opportunities for knowledge construction.">
+              <div><strong>PBL context</strong><small>Cases and projects gave concepts a reason to be used.</small></div>
+              <div><strong>CT practices</strong><small>Decomposition, patterns, abstraction and algorithmic thinking organised inquiry.</small></div>
+              <div><strong>Visible representations</strong><small>Activities, drawings and traces let students inspect how an algorithm behaves.</small></div>
+              <div><strong>Practice and explanation</strong><small>Repeated attempts and teaching an idea to someone else helped students work through it.</small></div>
+              <div><strong>Responsive scaffolding</strong><small>Examples, feedback, resources and people helped students validate their next step.</small></div>
+              <div><strong>Possible learning movement</strong><small>Students could explain, compare, apply and revisit their understanding.</small></div>
+            </div>
+            <figcaption id="fig-11-3-caption">The findings bring these design conditions together as a connected classroom practice, expressed through Kick off, Navigate, Observe, and Tie back.</figcaption>
+          </figure>
+          <figure class="qual-quote"><blockquote>“...the first time I was not aware of shortest path algorithms and I just used google maps to map out the different points and just choose a path that seemed shortest to me. But after I learned Dijkstra's, Bellman Ford's, Floyd's Algorithms I saw a new approach and solved the problem thinking of it as a graph...”</blockquote><figcaption>Student comparing an initial route choice with an algorithmic representation; open response to survey item 16.</figcaption></figure>
+          <p>The survey gives a useful design signal. Students rated the item about course design supporting academic and personal growth at 4.55 out of 5. At the same time, seeking additional resources when facing difficulty had a lower mean of 3.90. This points to a practical improvement: make help-seeking, resource choice and checking the validity of an approach more explicit parts of the design.</p>
+          <div class="answer-callout"><strong>Answer to SRQ1.</strong> The study identified a coordinated set of course-design features that created opportunities for self-directed learning, problem solving, and transfer: meaningful problems, explicit CT reasoning, visible representations, repeated practice, and responsive support. Together, these features inform the design logic expressed in the final KNOT framework: purposeful beginnings, supported inquiry, visible thinking, and connections beyond the immediate task.</div>
+        </section>
+
+        <section class="chapter-section" id="section-11-4" aria-labelledby="heading-11-4">
+          <p class="section-number">11.4 <span>Sub-question 2 · Outcomes</span></p>
+          <h2 id="heading-11-4">What do students report about conceptual understanding, problem solving, and application, and what complementary patterns appear in concept ratings, project work, and course-performance records?</h2>
+          <p>Students generally reported that the course supported learning, but their responses varied by question and topic. The figures below show both the positive pattern and the areas where support may need attention.</p>
+          <figure class="figure-panel" aria-labelledby="fig-11-4-caption">
+            <span class="figure-title">Figure 11.4 · Selected course-survey item means</span>
+            <div class="chart" role="img" aria-label="Survey item means out of five: Q19 real-world systems 4.59, Q30 course design and growth 4.55, Q14 independent programming problem-solving confidence 4.25, Q18 transfer between topics 4.06, Q10 resource seeking 3.90, and Q22 uncertainty or feeling stuck 3.57.">
+              <div class="chart-row"><span>Q19 · Real-world systems</span><div class="chart-track"><div class="chart-bar" style="width:91.8%"></div></div><span class="chart-value">4.59</span></div>
+              <div class="chart-row"><span>Q30 · Course design</span><div class="chart-track"><div class="chart-bar" style="width:91%"></div></div><span class="chart-value">4.55</span></div>
+              <div class="chart-row"><span>Q14 · Independent problem-solving confidence</span><div class="chart-track"><div class="chart-bar" style="width:85%"></div></div><span class="chart-value">4.25</span></div>
+              <div class="chart-row"><span>Q18 · Transfer between topics</span><div class="chart-track"><div class="chart-bar" style="width:81.2%"></div></div><span class="chart-value">4.06</span></div>
+              <div class="chart-row"><span>Q10 · Resource seeking</span><div class="chart-track"><div class="chart-bar" style="width:78%"></div></div><span class="chart-value">3.90</span></div>
+              <div class="chart-row"><span>Q22 · Experienced uncertainty</span><div class="chart-track"><div class="chart-bar rust" style="width:71.4%"></div></div><span class="chart-value">3.57</span></div>
+            </div>
+            <div class="chart-legend"><span><i class="legend-dot"></i>Reported contribution or confidence</span><span><i class="legend-dot rust"></i>Experience of uncertainty, shown separately</span></div>
+            <figcaption id="fig-11-4-caption">Means are from 124 survey response records. Q5 was reverse-coded, but is not shown here. Q22 is not a positive outcome item: a higher rating means a student experienced uncertainty or felt stuck.</figcaption>
+          </figure>
+          <div class="stat-grid" aria-label="Course CIE performance summaries">
+            <article class="stat-card"><strong>37.45 / 50</strong><span>mean theory CIE total across 129 records</span></article>
+            <article class="stat-card"><strong>67.75 / 80</strong><span>mean lab CIE total across 128 records</span></article>
+            <article class="stat-card"><strong>105.49 / 130</strong><span>mean combined theory and lab total for 128 matched records</span></article>
+          </div>
+          <p>Across both divisions, mean theory performance was 37.45 out of 50 and mean lab performance was 67.75 out of 80. Component means were 13.62 out of 20 for ISA 1, 14.98 out of 20 for ISA 2, and 9.43 out of 10 for Activity 1. Lab exercise means were 15.38 out of 20, 15.57 out of 20, and 36.80 out of 40. The score bands show 70 of 129 theory totals in the 40–50 range, while 71 of 128 lab totals were in the 70–80 range and 48 were in the 60 to below 70 range. At component level, 124 of 128 students scored 30–40 on Lab Exercise 3, and 57 of 127 received 10 out of 10 for Activity 1. These records provide assessed course-performance evidence alongside student perceptions, concept ratings, and project application.</p>
+          <figure class="figure-panel" aria-labelledby="fig-11-5-caption">
+            <span class="figure-title">Figure 11.5 · Self-reported understanding varied by topic</span>
+            <div class="chart" role="img" aria-label="Percent reporting completely or mostly understanding: Binary Search Tree 98.4%, 2-3 Tree 96.9%, Bubble Sort 96.1%, Rabin-Karp 69.7%, Boyer-Moore 67.2%, and KMP 67.2%.">
+              <div class="chart-row"><span>Binary Search Tree</span><div class="chart-track"><div class="chart-bar" style="width:98.4%"></div></div><span class="chart-value">98.4%</span></div>
+              <div class="chart-row"><span>2-3 Tree</span><div class="chart-track"><div class="chart-bar" style="width:96.9%"></div></div><span class="chart-value">96.9%</span></div>
+              <div class="chart-row"><span>Bubble Sort</span><div class="chart-track"><div class="chart-bar" style="width:96.1%"></div></div><span class="chart-value">96.1%</span></div>
+              <div class="chart-row"><span>Rabin-Karp</span><div class="chart-track"><div class="chart-bar rust" style="width:69.7%"></div></div><span class="chart-value">69.7%</span></div>
+              <div class="chart-row"><span>Boyer-Moore</span><div class="chart-track"><div class="chart-bar rust" style="width:67.2%"></div></div><span class="chart-value">67.2%</span></div>
+              <div class="chart-row"><span>KMP</span><div class="chart-track"><div class="chart-bar rust" style="width:67.2%"></div></div><span class="chart-value">67.2%</span></div>
+            </div>
+            <figcaption id="fig-11-5-caption">Percentages combine “Completely Understood” and “Mostly Understood.” The concept form has 128 submissions and varying item response counts. Valid response counts range from 122 to 128. The source includes 19 “Not Understood at All” answers across 13 topics. These figures summarise students’ self-ratings of their topic understanding.</figcaption>
+          </figure>
+          <div class="stat-grid" aria-label="Project-evaluation findings">
+            <article class="stat-card"><strong>94.2%</strong><span>reported using arrays in project submissions (113 of 120)</span></article>
+            <article class="stat-card"><strong>89.2%</strong><span>reported using Dijkstra (107 of 120)</span></article>
+            <article class="stat-card"><strong>96.7%</strong><span>reported efficiency analysis for at least some modules (116 of 120)</span></article>
+            <article class="stat-card"><strong>53.3%</strong><span>reported efficiency analysis for all modules (64 of 120)</span></article>
+          </div>
+          <p>The survey and project records show that the course created opportunities to use ideas in context and that students perceived value in those opportunities. An automated, retrospective first-pass rubric screen adds a preliminary indication of what the public portfolio pages documented. For 111 accessible portfolios, the mean evidence score was 22.88 out of 50. Problem and real-world context averaged 4.24 out of 6, while algorithm reasoning averaged 3.77 out of 10. Efficiency discussion averaged 5.42 out of 10. Individual contribution was least visible, averaging 0.59 out of 6. One student described a shift “from knowing individual concepts to seeing how they all fit together.” Together, these records suggest meaningful contextual application, while the portfolios often made the reasoning and individual ownership harder to verify. The rubric is a structured analysis of visible documentation, not the original course grade.</p>
+          <p>The portfolio review describes the accessible student work through a common set of criteria. Read alongside project feedback, survey responses, and course performance, it shows how students represented algorithms, data structures, and design decisions in larger proposals.</p>
+          <p>This question asks what evidence indicates support for these outcomes. The survey, concept self-ratings, project records, CIE scores, and the designed tasks provide complementary views of students’ reported experience, application, and performance during the course. Across these sources, self-directed learning, problem solving, and transfer of knowledge connect to the broader process of knowledge construction.</p>
+          <div class="answer-callout"><strong>Answer to SRQ2.</strong> Students reported growth as problem solvers (103/124, 83.1%), connecting ideas and learning independently (114/124, 91.9%), and academic and personal growth through course design (120/124, 96.8%). Project responses, concept self-ratings, and course scores add complementary evidence; mean CIE scores were 37.45/50 in theory and 67.75/80 in lab. Together, Chapter 9’s survey and performance findings document student-reported improvement and course performance. These findings informed the learning design expressed in KNOT.</div>
+        </section>
+
+        <section class="chapter-section" id="section-11-5" aria-labelledby="heading-11-5">
+          <p class="section-number">11.5 <span>Sub-question 3 · Student experience</span></p>
+          <h2 id="heading-11-5">How do students describe moments of uncertainty, effort, and emerging clarity as they work through course concepts and tasks?</h2>
+          <p>The ten open-ended prompts gave students room to describe episodes instead of selecting a rating. Across the six themes in Chapter 10, students described moving from procedures to explanations, using visible representations, developing ways to work when stuck, framing and comparing solutions, connecting concepts, and giving course ideas situated meaning.</p>
+          <div class="insight-grid" aria-label="Six qualitative themes discussed in Chapter 10">
+            <article class="insight-card"><h3>Procedure to explanation</h3><p>Students asked why an algorithm took its form.</p></article>
+            <article class="insight-card"><h3>Action to mental model</h3><p>Sorting, drawings and tracing made steps inspectable.</p></article>
+            <article class="insight-card"><h3>Stuckness to strategy</h3><p>Practice, small examples, help-seeking and teaching supported progress.</p></article>
+            <article class="insight-card"><h3>Answer to reasoned choice</h3><p>Some students described decomposing and comparing before choosing.</p></article>
+            <article class="insight-card"><h3>Separate topics to connections</h3><p>Students related algorithms, structures and constraints.</p></article>
+            <article class="insight-card"><h3>Course idea to situated meaning</h3><p>Cases and projects connected ideas to everyday and real-world contexts.</p></article>
+          </div>
+          <figure class="qual-quote"><blockquote>“I struggled with minimum spanning trees at first but after working through examples and applying the concept to projects like city road planning helped me understand its logic and real-world use.”</blockquote><figcaption>Student describing how worked examples and a city-planning application helped clarify minimum spanning trees; open response to survey item 37.</figcaption></figure>
+          <figure class="qual-quote"><blockquote>“...I tried to understand it but no matter how much I tried I did not understand case 2... once I asked sir and again looked over it I understood why we were taking k-1...”</blockquote><figcaption>Student describing a difficult Boyer-Moore case becoming clear after asking for help and reviewing it; open response to survey item 26.</figcaption></figure>
+          <p>These accounts show that confidence and uncertainty can coexist. Students described taking initiative and making connections, while also asking for validation, clearer timing or more conceptual preparation. Some progress was partial. One student could connect a concept to a real-world problem but was still unsure which algorithm was effective. The discussion should preserve these accounts instead of presenting only successful moments.</p>
+          <div class="answer-callout"><strong>Answer to SRQ3.</strong> Students described varied, non-linear experiences involving uncertainty, effort, support, explanation, and provisional clarity. Their accounts show different routes through difficulty, practice, and emerging understanding as they worked through course concepts and tasks.</div>
+        </section>
+
+        <section class="chapter-section" id="section-11-6" aria-labelledby="heading-11-6">
+          <p class="section-number">11.6 <span>Sub-question 4 · Liminality</span></p>
+          <h2 id="heading-11-6">How can these accounts of uncertainty and emerging clarity be interpreted through liminality, while recognising that students’ learning paths may differ?</h2>
+          <p>Liminality is interpreted here through related but distinct sources. Final-study survey responses show how students described uncertainty and transition: Q9 asked whether the course case studies encouraged reflection (M = 4.39), Q22 asked whether students felt uncertain or stuck (M = 3.57), Q23 asked about later clarity or breakthroughs (M = 3.96), Q24 asked whether case studies helped them recognise transitions (M = 4.20), and Q25 asked whether they could identify movement from confusion to understanding (M = 4.35). Open response 26 invited students to describe a transition and what helped them cross it. These are retrospective accounts, so they indicate perceived experience rather than a measured sequence of change.</p>
+          <figure class="figure-panel" aria-labelledby="fig-11-6-caption">
+            <span class="figure-title">Figure 11.6 · Liminality as a revisitable experience</span>
+            <div class="learning-flow" role="img" aria-label="Prior understanding may be unsettled; students work through ambiguity with activity and support; an emerging explanation may become usable; a new task can reopen the question. This is not a required sequence.">
+              <div><strong>Prior understanding</strong><p>A learner has an explanation, partial model or strategy.</p></div><i aria-hidden="true">↔</i>
+              <div><strong>Unsettled understanding</strong><p>A problem exposes a gap, contradiction or uncertainty.</p></div><i aria-hidden="true">↔</i>
+              <div><strong>Work and support</strong><p>Students try, trace, ask, compare and revise.</p></div><i aria-hidden="true">↔</i>
+              <div><strong>Provisional clarity</strong><p>An idea becomes explainable or usable for now.</p></div>
+            </div>
+            <figcaption id="fig-11-6-caption">The arrows are two-way by design. This interpretive lens recognises that another context can renew uncertainty.</figcaption>
+          </figure>
+          <h3>What the sixteen cases contribute to this interpretation</h3>
+          <p>Second, the sixteen existing case descriptions help examine the kinds of intellectual movement the activities invite. Students are asked to move from observing phenomena such as repeated patterns, forts, artworks, animal behaviour, or slime mould routes towards algorithmic ideas such as pattern recognition, abstraction, decomposition, transfer, and shortest paths. This movement from a familiar or visible situation to a more abstract computational representation can create a threshold for learning. The cases therefore help us interpret where liminal work may arise in the design.</p>
+          <p>The sixteen case studies were present in both the pilot and the official study. In the official-study survey, 112 of 124 students (90.3%) agreed or strongly agreed that case studies supported reflection (Q9), and 108 of 124 (87.1%) agreed that they helped students recognise learning transitions (Q24). A further 116 of 124 (93.5%) reported identifying movement from confusion to understanding (Q25). These whole-course responses are not linked to individual case titles, so they show students’ overall perceptions of case-study reflection and transition rather than ratings of each of the sixteen cases separately. Read alongside open response 26 and students’ reflections, the cases help interpret how familiar phenomena could invite movement toward more abstract computational ideas.</p>
+          <div class="answer-callout"><strong>Answer to SRQ4.</strong> Liminality is useful for interpreting reported uncertainty, effort, emerging explanation and remaining questions. The current evidence supports it as a sensitising lens, not as a validated scale or a sequence that every student crossed.</div>
+        </section>
+
+        <section class="chapter-section" id="section-11-7" aria-labelledby="heading-11-7">
+          <p class="section-number">11.7 <span>What the findings add to KNOT</span></p>
+          <h2 id="heading-11-7">Keep the recursive idea, and make the support around it more visible</h2>
+          <p>KNOT Version 0 was a working proposition that emerged after the pilot. The final study gives grounds to retain its central relationship: meaningful problems create a context for inquiry, CT practices organise reasoning, and students’ changing understanding can be considered through a liminality lens. The final-study case and lab materials now make the design practice more concrete: students meet a problem, make modelling decisions, inspect efficiency or solution differences, and explain what they learned. Project feedback, including students’ accounts of using graph theory in the city design, shows that some students perceived and described such connections in their work. The student accounts add detail to what knowledge construction looked like in practice.</p>
+          <div class="framework-loop" aria-label="Core elements of the final KNOT framework">
+            <div><strong>Retain</strong><small>Knowledge construction as central, revisable work rather than a one-time outcome.</small></div>
+            <div><strong>Clarify</strong><small>Show representations, explanation, testing and connection as visible learning activity.</small></div>
+            <div><strong>Strengthen</strong><small>Show feedback, resource use and validation as support available throughout.</small></div>
+            <div><strong>Connect the learning</strong><small>Self-directed learning, problem solving, and transfer describe how students participate in constructing knowledge.</small></div>
+            <div><strong>Keep flexible</strong><small>Liminality describes possible experiences, not fixed steps or labels for students.</small></div>
+            <div><strong>Apply through practice</strong><small>The completed KNOT framework supports meaningful problems, visible reasoning, and connected learning.</small></div>
+          </div>
+          <p>The strongest design implication is to make validation and method selection explicit. The lab sheets ask students to compare algorithmic and LLM-generated approaches, while survey responses show that some students still wanted confirmation that their reasoning was valid or were unsure which algorithm was effective. The final KNOT framework represents feedback and checking as part of the learning environment, not as a final step after the student has already reached an answer.</p>
+          <p>The evidence therefore closes the loop: the questions shaped the course and data collection; students’ accounts and ratings reveal promising forms of support and points of difficulty; those findings come together in the final KNOT framework.</p>
+        </section>
+
+        <section class="chapter-section" id="section-11-8" aria-labelledby="heading-11-8">
+          <p class="section-number">11.8 <span>Discussion synthesis</span></p>
+          <h2 id="heading-11-8">The four learning dimensions form one connected account</h2>
+          <p>The central research question is answered through the convergence of the study’s evidence. The course created problem-centred opportunities; computational thinking gave students ways to represent, decompose, compare, and test ideas; students described taking initiative, solving problems, and transferring learning; and course records documented their work across theory, lab, and project settings.</p>
+          <p>Self-directed learning, problem solving, and transfer of knowledge are not separate destinations. They describe how learners participate in constructing knowledge. This connection is the main finding carried forward into the final KNOT framework: teachers design meaningful starting points, support students as they reason, observe their thinking, and help them connect what they learn.</p>
+          <p class="answer-callout"><strong>Discussion conclusion.</strong> Across the research questions, the study shows how an integrated PBL–CT course can support knowledge construction through purposeful problems, visible reasoning, practice, feedback, and application.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer chapter-footer"><span>KNOT <span class="footer-dot" aria-hidden="true">·</span> Learning, revisited.</span><a href="./chapter-12.html">Chapter 12 · Emergence of KNOT <span aria-hidden="true">→</span></a></footer>
+</body>
+</html>
+

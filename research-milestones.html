@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3e9">
+  <meta name="description" content="Professional learning, certificates, and achievements connected to the development of the KNOT research and framework.">
+  <title>Research Milestones and Achievements | KNOT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .milestone-intro { max-width:760px; margin:0 0 26px; color:var(--muted); line-height:1.8; }
+    .certificate-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:25px 0 12px; }
+    .certificate-card { overflow:hidden; border:1px solid var(--line); border-radius:15px; background:#fffdf7; box-shadow:0 8px 24px #2933260a; }
+    .certificate-preview { display:block; padding:10px; background:#eeeee8; border-bottom:1px solid var(--line); }
+    .certificate-preview img { display:block; width:100%; height:auto; aspect-ratio:792/612; object-fit:contain; background:white; }
+    .certificate-symbol { display:flex; min-height:155px; flex-direction:column; justify-content:space-between; padding:20px; border-bottom:1px solid var(--line); background:linear-gradient(135deg,#f0e7d5,#f8f4eb 58%,#e4e9df); color:var(--green); }
+    .certificate-symbol span { color:var(--rust); font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+    .certificate-symbol strong { max-width:230px; font:400 23px/1.25 var(--serif); }
+    .certificate-copy { padding:18px 19px 20px; }
+    .certificate-date { display:block; margin:0 0 8px; color:var(--rust); font-size:10px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
+    .certificate-copy h3 { margin:0 0 8px; color:var(--green); font:400 20px/1.4 var(--serif); }
+    .certificate-copy p { margin:0 0 13px; color:var(--muted); font-size:13px; line-height:1.65; }
+    .certificate-actions { display:flex; flex-wrap:wrap; gap:9px; }
+    .certificate-actions a { display:inline-flex; align-items:center; justify-content:center; min-height:37px; padding:8px 12px; border:1px solid var(--line); border-radius:999px; color:var(--green); font-size:11px; font-weight:700; text-decoration:none; }
+    .certificate-actions a:first-child { border-color:var(--green); background:var(--green); color:#fffdf7; }
+    .certificate-actions a:hover { transform:translateY(-1px); }
+    .milestone-note { margin:24px 0 0; padding:18px 20px; border-left:3px solid var(--rust); background:#fffdf7b8; color:var(--muted); line-height:1.75; }
+    .experience-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:25px 0 12px; }
+    .experience-card { position:relative; padding:21px 22px 22px 25px; border:1px solid var(--line); border-radius:15px; background:#fffdf7; box-shadow:0 8px 24px #2933260a; }
+    .experience-card::before { position:absolute; top:24px; bottom:24px; left:0; width:3px; border-radius:0 3px 3px 0; background:var(--rust); content:""; }
+    .experience-date { display:block; margin-bottom:9px; color:var(--rust); font-size:10px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
+    .experience-card h3 { margin:0 0 5px; color:var(--green); font:400 20px/1.35 var(--serif); }
+    .experience-org { margin:0 0 10px; color:var(--green); font-size:12px; font-weight:700; }
+    .experience-card p:last-child { margin-bottom:0; color:var(--muted); font-size:13px; line-height:1.7; }
+    @media(max-width:620px){.experience-grid{grid-template-columns:1fr}}
+    .milestone-note p:last-child { margin-bottom:0; }
+    @media(max-width:900px){.certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:620px){.certificate-grid{grid-template-columns:1fr}.certificate-copy{padding:16px}}
+  </style>
+</head>
+<body class="chapter-page research-milestones-page">
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="KNOT home"><span class="brand-mark" aria-hidden="true">k</span><span class="brand-name">KNOT</span></a>
+    <nav aria-label="Main navigation"><a class="nav-link" href="./contents.html">Notebook index <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="chapter-hero" id="top" aria-labelledby="page-title">
+      <div class="chapter-hero-copy">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Learning, practice, and achievement <span class="hero-kicker">A record around the research</span></p>
+        <h1 id="page-title">Research Milestones and Achievements</h1>
+        <p class="chapter-lede">The learning and experiences that supported this work, alongside the contributions that grew from it.</p>
+        <a class="chapter-scroll" href="#certificates">Explore the first milestones <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art course-art" role="img" aria-label="A path connecting professional learning, research practice, and contributions.">
+        <div class="course-map">
+          <span class="course-map-label">Learning around the work</span>
+          <div class="course-stages"><span>Learn</span><b aria-hidden="true">→</b><span>Explore</span></div>
+          <div class="course-stages course-stage-bottom"><span>Methods</span><b aria-hidden="true">→</b><span>Practice</span></div>
+          <div class="course-outcomes"><span>Design</span><span>Study</span><span>Share</span></div>
+          <span class="course-map-note">small steps, lasting work</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="chapter-layout">
+      <aside class="chapter-nav" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#certificates"><span>01</span><strong>Courses and certificates</strong></a>
+        <a href="#further-learning"><span>02</span><strong>Further learning</strong></a>
+        <a href="#research-period"><span>03</span><strong>Research-period experiences</strong></a>
+        <a href="#faculty-development"><span>04</span><strong>Faculty development</strong></a>
+        <a href="#gurusetu"><span>05</span><strong>GURUSETU videos</strong></a>
+        <a href="#knotty-class"><span>06</span><strong>KNOTTY CLASS</strong></a>
+        <a class="back-top" href="#top">Back to top ↑</a>
+      </aside>
+      <article class="chapter-content">
+        <section class="chapter-section" id="certificates" aria-labelledby="certificates-title">
+          <p class="section-number">Learning and certification <span>November 2022</span></p>
+          <h2 id="certificates-title">Courses that strengthened the work</h2>
+          <p class="milestone-intro">These first three certificates record learning in learning innovation and in both quantitative and qualitative research methods. Together, they sit alongside the classroom exploration and research design that shaped this study.</p>
+          <div class="certificate-grid">
+            <article class="certificate-card">
+              <a class="certificate-preview" href="./certificates/designing-learning-innovation.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the Designing Learning Innovation certificate PDF">
+                <img src="./images/certificates/designing-learning-innovation.png" alt="Coursera certificate for Designing Learning Innovation, completed November 11, 2022">
+              </a>
+              <div class="certificate-copy">
+                <span class="certificate-date">November 11, 2022</span>
+                <h3>Designing Learning Innovation</h3>
+                <p>Authorized by Politecnico di Milano and offered through Coursera. Online non-credit course.</p>
+                <div class="certificate-actions"><a href="./certificates/designing-learning-innovation.pdf" target="_blank" rel="noopener noreferrer">View certificate</a><a href="https://coursera.org/verify/E3XN4TNBPSWN" target="_blank" rel="noopener noreferrer">Verify</a></div>
+              </div>
+            </article>
+            <article class="certificate-card">
+              <a class="certificate-preview" href="./certificates/qualitative-research-methods.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the Qualitative Research Methods certificate PDF">
+                <img src="./images/certificates/qualitative-research-methods.png" alt="Coursera certificate for Qualitative Research Methods, completed November 18, 2022">
+              </a>
+              <div class="certificate-copy">
+                <span class="certificate-date">November 18, 2022</span>
+                <h3>Qualitative Research Methods</h3>
+                <p>Authorized by the University of Amsterdam and offered through Coursera. Online non-credit course.</p>
+                <div class="certificate-actions"><a href="./certificates/qualitative-research-methods.pdf" target="_blank" rel="noopener noreferrer">View certificate</a><a href="https://coursera.org/verify/U78C59A77Z58" target="_blank" rel="noopener noreferrer">Verify</a></div>
+              </div>
+            </article>
+            <article class="certificate-card">
+              <a class="certificate-preview" href="./certificates/quantitative-methods.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the Quantitative Methods certificate PDF">
+                <img src="./images/certificates/quantitative-methods.png" alt="Coursera certificate for Quantitative Methods, completed November 28, 2022">
+              </a>
+              <div class="certificate-copy">
+                <span class="certificate-date">November 28, 2022</span>
+                <h3>Quantitative Methods</h3>
+                <p>Authorized by the University of Amsterdam and offered through Coursera. Online non-credit course.</p>
+                <div class="certificate-actions"><a href="./certificates/quantitative-methods.pdf" target="_blank" rel="noopener noreferrer">View certificate</a><a href="https://coursera.org/verify/RKK8YU4W5ZLD" target="_blank" rel="noopener noreferrer">Verify</a></div>
+              </div>
+            </article>
+          </div>
+          <div class="milestone-note"><p><strong>Why these milestones matter.</strong> Learning innovation and research methods provided useful grounding for the teaching experiments and the later study. These certificates are one part of the wider learning, practice, and achievement connected to KNOT.</p></div>
+        </section>
+        <section class="chapter-section" id="further-learning" aria-labelledby="further-learning-title">
+          <p class="section-number">Additional learning <span>2020–2025</span></p>
+          <h2 id="further-learning-title">Learning that travelled into the research</h2>
+          <p class="milestone-intro">These specializations and courses added to the work in different ways: by strengthening academic communication, attention to learning and cognition, and reflection on how AI and teaching meet. They supported the researcher's wider preparation; they are not presented as evidence for the study's findings.</p>
+          <div class="certificate-grid">
+            <article class="certificate-card">
+              <div class="certificate-symbol"><span>Specialization · August 2020</span><strong>Good with Words: Writing and Editing</strong></div>
+              <div class="certificate-copy"><span class="certificate-date">August 30, 2020 · University of Michigan</span><h3>Good with Words: Writing and Editing</h3><p>Strengthened clear organisation, revision, and reader-focused writing for presenting a long research journey.</p><div class="certificate-actions"><a href="https://www.coursera.org/account/accomplishments/specialization/JNG5BK6Z88PR" target="_blank" rel="noopener noreferrer">View credential</a></div></div>
+            </article>
+            <article class="certificate-card">
+              <div class="certificate-symbol"><span>Specialization · July 2020</span><strong>Creative Writing</strong></div>
+              <div class="certificate-copy"><span class="certificate-date">July 15, 2020 · Wesleyan University</span><h3>Creative Writing</h3><p>Developed attention to structure, description, and revision that also supports accessible explanation of ideas and classroom experiences.</p><div class="certificate-actions"><a href="https://www.coursera.org/account/accomplishments/specialization/56BV7N88MY5M" target="_blank" rel="noopener noreferrer">View credential</a></div></div>
+            </article>
+            <article class="certificate-card">
+              <div class="certificate-symbol"><span>Specialization · November 2020</span><strong>Mind and Machine</strong></div>
+              <div class="certificate-copy"><span class="certificate-date">November 18, 2020 · University of Colorado Boulder</span><h3>Mind and Machine</h3><p>Connected ideas from cognitive science and computing, complementing the study's interest in how learners reason through problems.</p><div class="certificate-actions"><a href="https://www.coursera.org/account/accomplishments/specialization/8GTN8XPW5KLV" target="_blank" rel="noopener noreferrer">View credential</a></div></div>
+            </article>
+            <article class="certificate-card">
+              <div class="certificate-symbol"><span>Course · August 2025</span><strong>AI Education for Teachers</strong></div>
+              <div class="certificate-copy"><span class="certificate-date">August 15, 2025 · Macquarie University and IBM</span><h3>Artificial Intelligence (AI) Education for Teachers</h3><p>Added a focused perspective on instructional design, computational thinking, and the educational use of AI.</p><div class="certificate-actions"><a href="https://www.coursera.org/account/accomplishments/verify/FE1OILBCO4QS" target="_blank" rel="noopener noreferrer">View credential</a></div></div>
+            </article>
+            <article class="certificate-card">
+              <div class="certificate-symbol"><span>Specialization · September 2020</span><strong>The Teacher and Social and Emotional Learning (SEL)</strong></div>
+              <div class="certificate-copy"><span class="certificate-date">September 21, 2020</span><h3>The Teacher and Social and Emotional Learning (SEL)</h3><p>Explored social and emotional learning for students and teachers, broadening the perspective on the human dimensions of classroom experience.</p><div class="certificate-actions"><a href="https://www.coursera.org/account/accomplishments/specialization/TKGVB4UW26CE" target="_blank" rel="noopener noreferrer">View credential</a></div></div>
+            </article>
+            <article class="certificate-card">
+              <div class="certificate-symbol"><span>Specialization · July 2020</span><strong>English for Research Publication Purposes</strong></div>
+              <div class="certificate-copy"><span class="certificate-date">July 20, 2020</span><h3>English for Research Publication Purposes</h3><p>Supported academic reading and writing for communicating research through papers and the final manuscript.</p><div class="certificate-actions"><a href="https://www.coursera.org/account/accomplishments/specialization/7NJRBSLHRX2R" target="_blank" rel="noopener noreferrer">View credential</a></div></div>
+            </article>
+          </div>
+          <div class="milestone-note"><p><strong>How they fit.</strong> These learning experiences contributed to the preparation behind the work. The classroom studies, source data, analysis, and conclusions remain grounded in the research process described in the chapters.</p></div>
+        </section>
+        <section class="chapter-section" id="research-period" aria-labelledby="research-period-title">
+          <p class="section-number">Research period <span>2021–2024</span></p>
+          <h2 id="research-period-title">Experiences that supported the work</h2>
+          <p class="milestone-intro">Alongside classroom practice and data collection, these research experiences, programmes, and certifications helped build a stronger grounding in educational research and problem-based learning.</p>
+          <div class="experience-grid">
+            <article class="experience-card">
+              <span class="experience-date">May–July 2023 · 3 months</span>
+              <h3>Research Scholar</h3>
+              <p class="experience-org">Anurag University · Full-time · On-site · Hyderabad, Telangana, India</p>
+              <p>A qualitative research project to understand teaching and learning aspects of programming in computer science.</p>
+            </article>
+            <article class="experience-card">
+              <span class="experience-date">December 2022–June 2024</span>
+              <h3>PBL Pedagogical Development Certificate Program</h3>
+              <p class="experience-org">Aalborg University · Problem-Based Learning</p>
+              <p>Built a deeper understanding of PBL pedagogy and its design principles, supporting the development and refinement of the KNOT approach.</p>
+            </article>
+            <article class="experience-card">
+              <span class="experience-date">Issued November 2021</span>
+              <h3>Qualitative Research for Community Upliftment</h3>
+              <p class="experience-org">NITTTR Chennai</p>
+              <p>Added grounding in qualitative inquiry relevant to understanding teaching and learning in context.</p>
+            </article>
+            <article class="experience-card">
+              <span class="experience-date">Issued December 2022</span>
+              <h3>IUCEE International Engineering Educator Certification Program</h3>
+              <p class="experience-org">Indo Universal Collaboration for Engineering Education (IUCEE)</p>
+              <p>Supported continued development in engineering education and learner-centred teaching.</p>
+            </article>
+            <article class="experience-card">
+              <span class="experience-date">Issued September 2021</span>
+              <h3>Nurturing Researcher-Pro Mindset in Self</h3>
+              <p class="experience-org">Indo Universal Collaboration for Engineering Education (IUCEE)</p>
+              <p>Encouraged a reflective and inquiry-oriented approach to professional and educational practice.</p>
+            </article>
+            <article class="experience-card">
+              <span class="experience-date">Issued January 2024</span>
+              <h3>Transformative Education for Sustainable Social Impact (TESSI) Program</h3>
+              <p class="experience-org">Lehigh University</p>
+              <p>Extended the work's connection to education, design, and meaningful social impact.</p>
+            </article>
+          </div>
+          <div class="milestone-note"><p><strong>A connected period of growth.</strong> These experiences contributed to the researcher's preparation while the classroom work was taking shape. They sit alongside the study's own evidence and are not substitutes for it.</p></div>
+        </section>
+        <section class="chapter-section" id="faculty-development" aria-labelledby="faculty-development-title">
+          <p class="section-number">Sharing practice <span>Faculty development</span></p>
+          <h2 id="faculty-development-title">Helping faculty design case studies</h2>
+          <p class="milestone-intro">During the research period, I conducted more than ten Faculty Development Programmes on designing case studies for teaching. These sessions reached faculty through the Malaviya Mission Teacher Training Programme (MMTTP) and universities across India, creating space to work through how a concept can become a meaningful case for student inquiry.</p>
+          <div class="milestone-note"><p><strong>From classroom practice to faculty development.</strong> The sessions brought the work of designing problems and cases into conversation with other teachers. The aim was to help faculty move from a topic to a case that invites students to interpret, question, and apply ideas.</p></div>
+          <div class="experience-grid">
+            <article class="experience-card">
+              <span class="experience-date">Published 2026 · Journal article</span>
+              <h3>Design of Effective Case Studies and Reflections Using AI for Higher-Order Skills</h3>
+              <p class="experience-org">Prakash Hegade and Ashok Shettar · Journal of Engineering Education Transformations, 39 (Special Issue 2), 40–47</p>
+              <p>The paper presents an approach to AI-supported case-study design grounded in threshold concepts. It describes how identifying what learners know, what they find difficult, and where concepts apply can guide the creation of cases and reflections aimed at higher-order thinking.</p>
+              <p><a href="https://journaleet.in/index.php/jeet/article/view/3537" target="_blank" rel="noopener noreferrer">Read the paper ↗</a> · DOI: <a href="https://doi.org/10.16920/jeet/2026/v39is2/26005" target="_blank" rel="noopener noreferrer">10.16920/jeet/2026/v39is2/26005</a></p>
+            </article>
+          </div>
+        </section>
+        <section class="chapter-section" id="gurusetu" aria-labelledby="gurusetu-title">
+          <p class="section-number">Teaching beyond the classroom <span>GURUSETU</span></p>
+          <h2 id="gurusetu-title">Video contributions for GURUSETU</h2>
+          <p class="milestone-intro">I also recorded video lessons for GURUSETU, a national faculty-development initiative funded by the Ministry of Education, Government of India. The initiative shares short, structured learning modules with higher-education faculty.</p>
+          <div class="experience-grid">
+            <article class="experience-card">
+              <span class="experience-date">Faculty learning videos</span>
+              <h3>Teaching and Learning Pedagogies</h3>
+              <p class="experience-org">GURUSETU · Ministry of Education, Government of India initiative</p>
+              <p>I recorded videos on teaching and learning pedagogies for the GURUSETU faculty-development initiative. These contributions extend the researcher's classroom and faculty-development experience to educators beyond the institution.</p>
+              <p><a href="https://gurusetu.org/" target="_blank" rel="noopener noreferrer">Visit GURUSETU ↗</a></p>
+            </article>
+          </div>
+          <div class="milestone-note"><p><strong>Why this belongs here.</strong> The faculty-development sessions and recorded lessons carried the researcher's experience into conversations with other educators, extending the work from designing one course to helping others think about their own teaching.</p></div>
+        </section>
+        <section class="chapter-section" id="knotty-class" aria-labelledby="knotty-class-title">
+          <p class="section-number">What grows next <span>A book for teachers</span></p>
+          <h2 id="knotty-class-title">KNOTTY CLASS</h2>
+          <div class="milestone-note">
+            <p><strong>A practical guide to teaching with KNOT.</strong> KNOTTY CLASS will help teachers design classroom experiences, lesson plans, and assessments rooted in the KNOT philosophy. It will translate the research into simple, usable guidance for shaping meaningful problems, supporting student thinking, noticing learning, and helping understanding travel into what comes next.</p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer chapter-footer"><a href="./research-publications.html">Research Publications <span aria-hidden="true">←</span></a><a href="./contents.html">Notebook index <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

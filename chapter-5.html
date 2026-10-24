@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3e9">
+  <meta name="description" content="Chapter 5 presents an exploratory account of the 2022–23 DSA course and student feedback that informed the later pilot study.">
+  <title>Initial Exploration | KNOT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .explore-banner { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:30px 0; }
+    .explore-stat { padding:20px 22px; border:1px solid var(--line); border-radius:14px; background:#fffdf7d9; }
+    .explore-stat strong { display:block; color:var(--green); font:400 34px/1.1 var(--serif); }
+    .explore-stat span { display:block; margin-top:8px; color:var(--muted); font-size:12px; line-height:1.6; }
+    .rating-list { display:grid; gap:13px; margin:20px 0 28px; }
+    .rating-row { display:grid; grid-template-columns:minmax(170px,1.2fr) minmax(120px,2fr) 55px; align-items:center; gap:13px; font-size:13px; }
+    .rating-track { height:12px; overflow:hidden; border-radius:99px; background:#e9e5d9; }
+    .rating-fill { height:100%; border-radius:inherit; background:linear-gradient(90deg,#769477,#496b50); }
+    .rating-value { color:var(--green); font-weight:700; text-align:right; }
+    .explore-callout { margin:28px 0; padding:22px 25px; border-left:3px solid var(--rust); background:#fffdf7b8; }
+    .explore-callout p:last-child { margin-bottom:0; }
+    .quote-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:22px 0; }
+    .quote-grid blockquote { margin:0; padding:20px 22px; border:1px solid var(--line); border-radius:14px; background:#fffdf7d9; font:italic 14px/1.8 var(--serif); }
+    .quote-grid blockquote cite { display:block; margin-top:12px; color:var(--muted); font:600 11px/1.5 var(--sans); font-style:normal; }
+    .explore-bridge { margin:32px 0; padding:25px 28px; border:1px solid #c9d2c0; border-radius:16px; background:var(--green-light); }
+    .explore-bridge h3 { margin:0 0 10px; color:var(--green); font:400 22px/1.35 var(--serif); }
+    @media(max-width:700px) { .explore-banner { grid-template-columns:1fr; } .quote-grid { grid-template-columns:1fr; } .rating-row { grid-template-columns:1fr 2fr 48px; gap:8px; font-size:11px; } }
+  </style>
+</head>
+<body class="chapter-page chapter-five">
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="KNOT home"><span class="brand-mark" aria-hidden="true">k</span><span class="brand-name">KNOT</span></a>
+    <nav aria-label="Main navigation"><a class="nav-link" href="./contents.html">Notebook index <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="chapter-hero" id="top" aria-labelledby="chapter-title">
+      <div class="chapter-hero-copy">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Chapter 5 <span class="hero-kicker">Listening before the pilot</span></p>
+        <h1 id="chapter-title">Initial Exploration</h1>
+        <p class="chapter-lede">Before the pilot study, the course was already being shaped through classroom experiments. This chapter records what students said about those experiences and how their feedback helped identify questions for a more structured study.</p>
+        <a class="chapter-scroll" href="#section-5-1">Read the chapter <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art course-art" role="img" aria-label="Student feedback informs reflection, refinement, and the later pilot study.">
+        <div class="course-map">
+          <span class="course-map-label">An exploratory course cycle</span>
+          <div class="course-stages"><span>Try an approach</span><b aria-hidden="true">→</b><span>Listen to students</span></div>
+          <div class="course-stages course-stage-bottom"><span>Notice patterns</span><b aria-hidden="true">→</b><span>Plan the pilot</span></div>
+          <div class="course-outcomes"><span>Course feedback</span><span>Design questions</span><span>Next study</span></div>
+          <span class="course-map-note">explore · reflect · refine</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="chapter-layout">
+      <aside class="chapter-nav" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#section-5-1"><span>5.1</span><strong>Purpose and setting</strong></a>
+        <a href="#section-5-2"><span>5.2</span><strong>What students reported</strong></a>
+        <a href="#section-5-3"><span>5.3</span><strong>What the comments added</strong></a>
+        <a href="#section-5-4"><span>5.4</span><strong>What this exploration means</strong></a>
+        <a href="#section-5-5"><span>5.5</span><strong>From exploration to pilot</strong></a>
+        <a class="back-top" href="#top">Back to top ↑</a>
+      </aside>
+      <article class="chapter-content">
+        <section class="chapter-section" id="section-5-1" aria-labelledby="heading-5-1">
+          <p class="section-number">5.1 <span>Purpose and setting</span></p>
+          <h2 id="heading-5-1">A course taking shape through exploration</h2>
+          <p>The work described here took place in the 2022–23 Design and Analysis of Algorithms course with its own student batch, separate from the later pilot and official study. At this stage, I was trying different ways to make the subject more engaging and connected to students’ experience. The course included assignments, a portfolio, case studies, a course project, classroom activities, a search-engine task, a DFS and BFS challenge, a ChatGPT lab, and a techno-fun week. These were teaching experiments within the course, not parts of a validated framework.</p>
+          <p>At the end of the course, students were invited to provide feedback on their experience. The survey asked them to rate course assignments, the portfolio, case studies, the course project, and course delivery. It also asked which assignment they liked most, whether classroom activities and the techno-fun week helped, and what they would change. The purpose of this chapter is to learn from that feedback and show how it informed the later pilot study.</p>
+          <div class="explore-callout"><p><strong>Initial exploratory research question.</strong> How did students experience the DAA course and its learning activities, and what did they consider helpful or in need of improvement?</p><p>This open question reflected the exploratory purpose of the work. It helped surface issues for the more focused PBL–CT pilot question presented in Chapter 6.</p></div>
+          <p>Attendance was self-reported: 32 respondents selected 100%, 37 selected 80 to 99%, 11 selected 60 to 80%, and one selected less than 60%.</p>
+          <div class="explore-banner" aria-label="Summary of exploratory feedback">
+            <div class="explore-stat"><strong>81</strong><span>completed feedback forms in the supplied 2022–23 effectiveness file</span></div>
+            <div class="explore-stat"><strong>40</strong><span>written responses to the optional improvement question</span></div>
+            <div class="explore-stat"><strong>5</strong><span>course experience ratings, each reported on a 1 to 5 scale</span></div>
+          </div>
+          <div class="explore-callout"><p><strong>How to read these findings.</strong> This exploratory feedback captures the views of the 81 respondents and offers early insight into how students experienced the course and its activities.</p></div>
+        </section>
+
+        <section class="chapter-section" id="section-5-2" aria-labelledby="heading-5-2">
+          <p class="section-number">5.2 <span>What students reported</span></p>
+          <h2 id="heading-5-2">Students valued applied and varied course experiences</h2>
+          <p>Ratings were generally favourable. The course project and course delivery received the highest average ratings, followed closely by assignments and case studies. The portfolio was also rated positively, though it received the lowest average among these areas. Ratings use the full 1 to 5 scale, where 1 is highly ineffective and 5 is highly effective. The averages below are descriptive summaries of ordinal responses.</p>
+          <div class="rating-list" role="img" aria-label="Average ratings from 1 to 5: course delivery 4.60, course project 4.59, course assignments 4.51, case studies 4.38, portfolio 4.19.">
+            <div class="rating-row"><span>Course delivery and motivation</span><div class="rating-track"><div class="rating-fill" style="width:92.1%"></div></div><span class="rating-value">4.60</span></div>
+            <div class="rating-row"><span>Course project relevance</span><div class="rating-track"><div class="rating-fill" style="width:91.9%"></div></div><span class="rating-value">4.59</span></div>
+            <div class="rating-row"><span>Course assignments</span><div class="rating-track"><div class="rating-fill" style="width:90.1%"></div></div><span class="rating-value">4.51</span></div>
+            <div class="rating-row"><span>Case studies</span><div class="rating-track"><div class="rating-fill" style="width:87.7%"></div></div><span class="rating-value">4.38</span></div>
+            <div class="rating-row"><span>Portfolio assignment</span><div class="rating-track"><div class="rating-fill" style="width:83.7%"></div></div><span class="rating-value">4.19</span></div>
+          </div>
+          <p>All 81 respondents rated each of these five areas. For example, 75 students rated course assignments as effective or highly effective, while six selected the middle rating or lower. For the portfolio, 62 selected 4 or 5 and 19 selected 3. Portfolio commitment was more varied: 54 students rated their commitment 4 or 5, 23 selected 3, and four selected 2. The portfolio appears to have been well received, but the responses also suggest that its timing, workload, and connection to course concepts deserved closer attention.</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Exploratory course feedback rating summary">
+            <table><caption>Table 5.1 · Course experience ratings, n = 81 for each item</caption><thead><tr><th scope="col">Area rated</th><th scope="col">Mean rating</th><th scope="col">Ratings of 4 or 5</th><th scope="col">Middle rating</th><th scope="col">Ratings of 1 or 2</th></tr></thead><tbody>
+              <tr><td>Course assignments</td><td>4.51</td><td>75 (92.6%)</td><td>5 (6.2%)</td><td>1 (1.2%)</td></tr>
+              <tr><td>Portfolio assignment</td><td>4.19</td><td>62 (76.5%)</td><td>19 (23.5%)</td><td>0</td></tr>
+              <tr><td>Case studies</td><td>4.38</td><td>75 (92.6%)</td><td>6 (7.4%)</td><td>0</td></tr>
+              <tr><td>Course project relevance</td><td>4.59</td><td>75 (92.6%)</td><td>6 (7.4%)</td><td>0</td></tr>
+              <tr><td>Course delivery and motivation</td><td>4.60</td><td>77 (95.1%)</td><td>4 (4.9%)</td><td>0</td></tr>
+            </tbody></table>
+          </div>
+          <p>The favourite-assignment responses add another view. The course project was selected most often (21), followed by the search-engine task (16) and portfolio (12). ChatGPT Lab was selected by nine respondents. The remaining responses named Code the Philosophy (5), Inventory (5), Dijkstra Lab (5), the DFS-BFS challenge (4), case studies (3), and one other response. Students did not converge on a single activity. This variety supports keeping multiple routes into the subject rather than assuming one activity will engage everyone in the same way.</p>
+          <p>For classroom activities, 75 respondents selected “Yes” and four selected “Maybe.” Two gave a written qualification instead of a yes or no. Their comments point to participation and interaction as matters to examine, not merely whether activities were present. For techno-fun week, 60 said it helped, 14 described it as fun rather than helpful for learning, and seven gave context such as competing deadlines, illness, or a qualified positive response. The activity seems to have created enjoyment for many, while its learning purpose was not equally clear to everyone.</p>
+        </section>
+
+        <section class="chapter-section" id="section-5-3" aria-labelledby="heading-5-3">
+          <p class="section-number">5.3 <span>What the comments added</span></p>
+          <h2 id="heading-5-3">Positive feedback sat beside practical requests</h2>
+          <p>Forty of the 81 respondents wrote something in the improvement field. Many expressed appreciation or said that no change was needed. Others gave specific suggestions. Reading both kinds of response matters: the positive ratings show acceptance, while the suggestions show where course design could be made more deliberate.</p>
+          <div class="quote-grid">
+            <blockquote>“I personally feel that more emphasis should be given on hard coding skills on problems of the Algorithms that have been taught in the classes, instead of just translating the algorithm to code...”<cite>Anonymous course feedback, 2022–23</cite></blockquote>
+            <blockquote>“Increasing practice sessions for coding a particular problem”<cite>Anonymous course feedback, 2022–23</cite></blockquote>
+            <blockquote>“First few days would be hard to concentrate as your pace is too hard to catch, rest all is just too good for us.”<cite>Anonymous course feedback, 2022–23</cite></blockquote>
+            <blockquote>“if you would have given us the portfolio assignment during mid - semester (after we learnt some of the dsa concepts) then I think the learning and understanding of algorithms would have been much more effective”<cite>Anonymous course feedback, 2022–23</cite></blockquote>
+            <blockquote>“...their always less interactions as only you are interactive but we all appeared to be just formal..”<cite>Anonymous course feedback, 2022–23</cite></blockquote>
+            <blockquote>“Regular coding contest on Hackerrank”<cite>Anonymous course feedback, 2022–23</cite></blockquote>
+          </div>
+          <p>Several comments point toward a gap between understanding an explanation and independently producing a solution. Students asked for more coding practice, opportunities to solve a problem themselves, and attention to copying or memorising code. This is not evidence that students lacked problem-solving ability. It is evidence that some students wanted more occasions to demonstrate and strengthen that ability through their own work.</p>
+          <p>Other comments raised the pace of early classes and the timing of the portfolio. One student suggested placing the portfolio after students had encountered some DSA concepts. This suggests a sequencing question: open-ended exploration can spark curiosity, but learners may benefit from a small base of concepts before they are asked to connect examples to formal algorithms. The survey does not tell us which timing is best, so the question needed to be explored through course design.</p>
+          <p>Students also valued the course’s relevance and energy while asking for more interaction among classmates. One respondent described activities as useful but noted that participation felt formal and largely teacher-led. This distinction shaped a useful design question for later work: how can an activity move from being something students watch or follow to something they actively discuss, test, and explain?</p>
+          <p>Finally, some students suggested more real-world motivation, regular coding contests, or a different programming language. These are contextual suggestions rather than direct evidence about the effectiveness of PBL or computational thinking. They nevertheless show that students judged the course through several connected experiences: relevance, coding fluency, pacing, participation, and the language used for implementation.</p>
+          <div class="explore-callout"><p><strong>Analytic reading.</strong> The central insight from this feedback is a productive tension. Students appreciated the engaging and applied course, yet some wanted more time and structure to practise independently, interact with each other, and connect exploratory tasks with concepts already taught. The next study needed to examine how those elements could be brought together deliberately.</p></div>
+        </section>
+
+        <section class="chapter-section" id="section-5-4" aria-labelledby="heading-5-4">
+          <p class="section-number">5.4 <span>What this exploration means</span></p>
+          <h2 id="heading-5-4">What the exploration contributed</h2>
+          <p>The early feedback pointed toward a study of how students experience active, problem-centred learning and how they connect course ideas to meaningful tasks. Students’ comments brought attention to relevance, variety, practice, peer interaction, pacing, and the place of portfolio work in the semester. These ideas informed the questions and evidence sources taken into the pilot study.</p>
+          <div class="pilot-decision-grid">
+            <section class="pilot-decision pilot-decision-keep"><p class="decision-label">Carry forward as design ideas</p><h3>Keep relevance, variety, and active work</h3><p>Students’ responses supported retaining authentic projects, cases, portfolio work, classroom activities, and opportunities to connect algorithms with meaningful problems. The activities should make room for students to solve, explain, and discuss, not only observe a teacher-led demonstration.</p></section>
+            <section class="pilot-decision pilot-decision-refine"><p class="decision-label">Examine more closely</p><h3>Plan practice, pacing, and sequencing</h3><p>The comments called for more independent coding practice, peer interaction, careful pacing, and a considered point in the semester for open-ended portfolio work. The pilot could explore these issues through multiple forms of classroom and assessment evidence.</p></section>
+            <section class="pilot-decision pilot-decision-set-aside"><p class="decision-label">Shape the next inquiry</p><h3>Ask how learning takes place</h3><p>The feedback motivated a closer study of how students take initiative, work through problems, and carry concepts into projects and other contexts. These questions became part of the later research design.</p></section>
+          </div>
+        </section>
+
+        <section class="chapter-section" id="section-5-5" aria-labelledby="heading-5-5">
+          <p class="section-number">5.5 <span>From exploration to pilot</span></p>
+          <h2 id="heading-5-5">The questions that led to a more structured study</h2>
+          <p>The 2022–23 feedback did not produce the KNOT framework by itself. It helped make the next questions visible. Students appeared to value meaningful contexts and varied activities, while also asking for more opportunities to work through problems independently, practise coding, take part in classroom interaction, and encounter activities at a suitable pace and point in the course.</p>
+          <div class="explore-bridge">
+            <h3>What the pilot needed to investigate</h3>
+            <p>How could authentic problems and computational thinking be joined with guided inquiry, individual problem-solving practice, reflection, and opportunities to use knowledge in a new context? What evidence would show not just that students enjoyed an activity, but how their understanding developed through it?</p>
+          </div>
+          <p>These questions led to the pilot study in Chapter 6. The pilot brought together a broader set of evidence, including student surveys, interviews, written assessment, case studies, lab work, and projects. It examined learning experiences more systematically and helped shape the first version of the KNOT framework. The initial exploration reported here remains an important earlier stage: it records how classroom experience and student feedback informed the move from trying activities to studying their role in knowledge construction.</p>
+          <p class="pilot-scope-note"><strong>Source and handling:</strong> Findings in this chapter were calculated from the supplied “DSA 2022–23 Effectiveness” CSV. All 81 submitted forms were included. Optional names and email addresses were not used or reproduced. Rating items were complete for all 81 forms. The improvement question had 40 non-empty responses. Percentages use 81 as the denominator unless otherwise stated and are rounded to one decimal place.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer chapter-footer"><span>KNOT <span class="footer-dot" aria-hidden="true">·</span> Learning, revisited.</span><a href="./chapter-6.html">Next: Chapter 6 · Pilot Study <span aria-hidden="true">→</span></a></footer>
+</body>
+</html>

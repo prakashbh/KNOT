@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3e9">
+  <meta name="description" content="Chapter 14 presents a practical KNOT Framework for designing classroom experiences, lesson plans, and assessment.">
+  <title>Chapter 14 · KNOT Framework</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .chapter-fourteen .knot-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem;margin:1.4rem 0}
+    .chapter-fourteen .knot-step{padding:1.1rem;border:1px solid #d9d0bf;border-radius:1rem;background:#fffaf1}
+    .chapter-fourteen .knot-letter{display:grid;place-items:center;width:2.7rem;height:2.7rem;margin-bottom:.7rem;border-radius:50%;background:#e9eee5;color:#405b48;font:700 1.35rem 'Merriweather',serif}
+    .chapter-fourteen .knot-step h3{margin:.2rem 0 .45rem;color:#405b48;font-size:1rem}
+    .chapter-fourteen .knot-step p{margin:0;font-size:.9rem;line-height:1.65}
+    .chapter-fourteen .teacher-prompt{margin:.8rem 0 0;padding-top:.7rem;border-top:1px solid #e5ddcf;color:#5f645b;font-size:.82rem;line-height:1.55}
+    .chapter-fourteen .plan-card{margin:1.4rem 0;padding:1.2rem;border:1px solid #d9d0bf;border-radius:1rem;background:#fffaf1}
+    .chapter-fourteen .plan-card h3{margin:.2rem 0 .8rem;color:#405b48}
+    .chapter-fourteen .plan-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}
+    .chapter-fourteen .plan-item{padding:.75rem;border-radius:.7rem;background:#f5f0e6}
+    .chapter-fourteen .plan-item strong{display:block;color:#405b48;font-size:.88rem}
+    .chapter-fourteen .plan-item span{display:block;margin-top:.22rem;color:#5f645b;font-size:.85rem;line-height:1.5}
+    .chapter-fourteen .assessment-loop{display:flex;align-items:stretch;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+    .chapter-fourteen .assessment-loop>div{flex:1 1 160px;padding:.9rem;border-radius:.8rem;background:#e9eee5}
+    .chapter-fourteen .assessment-loop strong{display:block;color:#354d3e}
+    .chapter-fourteen .assessment-loop span{display:block;margin-top:.3rem;font-size:.85rem;line-height:1.5}
+    .chapter-fourteen .assessment-loop i{align-self:center;color:#8c6342;font-style:normal;font-size:1.3rem}
+    .chapter-fourteen .example-box,.chapter-fourteen .principle-box{margin:1.1rem 0;padding:1rem 1.15rem;border-left:4px solid #b78250;border-radius:0 .8rem .8rem 0;background:#f5ecdc;line-height:1.7}
+    .chapter-fourteen .principle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:.85rem;margin:1.2rem 0}
+    .chapter-fourteen .principle-grid div{padding:.95rem;border:1px solid #d9d0bf;border-radius:.9rem;background:#fffaf1}
+    .chapter-fourteen .principle-grid strong{display:block;margin-bottom:.3rem;color:#405b48}
+    .chapter-fourteen .principle-grid span{font-size:.88rem;line-height:1.55}
+    .chapter-fourteen .closing-card{margin:1.5rem 0;padding:1.2rem;border-radius:1rem;background:#e9eee5;color:#354d3e;line-height:1.75}
+    .chapter-fourteen .aha-card{margin:1.3rem 0;padding:1.25rem;border:1px solid #c9b99d;border-radius:1rem;background:linear-gradient(135deg,#f5ecdc,#fffaf1)}
+    .chapter-fourteen .aha-card .aha-label{display:block;margin-bottom:.45rem;color:#9b6541;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .chapter-fourteen .aha-card h3{margin:.2rem 0 .55rem;color:#354d3e;font:700 1.25rem/1.45 'Merriweather',serif}
+    .chapter-fourteen .aha-card p{margin:.45rem 0;line-height:1.7}
+    .chapter-fourteen .aha-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.7rem;margin:1rem 0}
+    .chapter-fourteen .aha-steps div{padding:.85rem;border-radius:.8rem;background:#fffaf1}
+    .chapter-fourteen .aha-steps strong{display:block;color:#405b48}
+    .chapter-fourteen .aha-steps span{display:block;margin-top:.25rem;color:#5f645b;font-size:.86rem;line-height:1.5}
+    .chapter-fourteen .study-quote{margin:1rem 0;padding:.9rem 1.1rem;border-left:4px solid #b78250;background:#f5ecdc;border-radius:0 .8rem .8rem 0}
+    .chapter-fourteen .study-quote blockquote{margin:0;font:italic .98rem/1.65 'Merriweather',serif}
+    .chapter-fourteen .study-quote figcaption{margin-top:.45rem;color:#5f645b;font-size:.8rem}
+    .chapter-fourteen .theory-map-wrap{overflow-x:auto;margin:1rem 0}
+    .chapter-fourteen .theory-map{width:100%;min-width:680px;border-collapse:collapse;background:#fffaf1;font-size:.88rem}
+    .chapter-fourteen .theory-map th,.chapter-fourteen .theory-map td{padding:.75rem;border:1px solid #d9d0bf;text-align:left;vertical-align:top;line-height:1.6}
+    .chapter-fourteen .theory-map th{background:#e9eee5;color:#354d3e}
+    .chapter-fourteen .theory-map td:first-child{font-weight:700;color:#405b48}
+    .chapter-fourteen .final-knot-figure{margin:1.5rem 0;padding:1rem;border:1px solid #d9d0bf;border-radius:1.1rem;background:#fffdf7}
+    .chapter-fourteen .final-knot-figure .framework-diagram{display:block;width:100%;height:auto}
+    .chapter-fourteen .final-knot-scroll{overflow:hidden}
+    .chapter-fourteen .final-knot-figure figcaption{margin:.8rem .2rem .1rem;color:#5f645b;font-size:.88rem;line-height:1.6}
+    .chapter-fourteen .final-quote{margin:1.4rem 0;padding:1.25rem 1.4rem;border-left:5px solid #b78250;border-radius:0 1rem 1rem 0;background:#f5ecdc;color:#354d3e}
+    .chapter-fourteen .final-quote blockquote{margin:0;font:700 clamp(1.1rem,2.2vw,1.45rem)/1.65 'Merriweather',serif}
+    .chapter-fourteen .final-quote figcaption{margin-top:.55rem;color:#5f645b;font-size:.82rem}
+    @media(max-width:760px){.chapter-fourteen .knot-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.chapter-fourteen .final-knot-scroll{overflow-x:auto}.chapter-fourteen .final-knot-figure .framework-diagram{min-width:700px}}
+    @media(max-width:520px){.chapter-fourteen .knot-steps,.chapter-fourteen .plan-grid{grid-template-columns:1fr}.chapter-fourteen .assessment-loop i{display:none}}
+  </style>
+</head>
+<body class="chapter-page chapter-fourteen">
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="KNOT home"><span class="brand-mark" aria-hidden="true">k</span><span class="brand-name">KNOT</span></a>
+    <nav aria-label="Main navigation"><a class="nav-link" href="./contents.html">Notebook index <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="chapter-hero" id="top" aria-labelledby="chapter-title">
+      <div class="chapter-hero-copy">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Chapter 14 <span class="hero-kicker">A guide for designing learning</span></p>
+        <h1 id="chapter-title">KNOT Framework</h1>
+        <p class="chapter-lede">A simple way to plan a class: begin with a meaningful question, help learners work through it, notice what they are learning, and connect their understanding to what comes next.</p>
+        <a class="chapter-scroll" href="#framework">See the framework <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="cycle-visual" aria-label="Four connected moves: Kick off, Navigate, Observe, Tie back">
+        <span class="scribble scribble-one" aria-hidden="true"></span>
+        <span class="scribble scribble-two" aria-hidden="true"></span>
+        <span class="cycle-center" aria-hidden="true">KNOT<br>class design</span>
+        <span class="cycle-node node-problem"><span class="node-number">K</span> Kick off</span>
+        <span class="cycle-node node-inquiry"><span class="node-number">N</span> Navigate</span>
+        <span class="cycle-node node-understanding"><span class="node-number">O</span> Observe</span>
+        <span class="cycle-node node-again"><span class="node-number">T</span> Tie back</span>
+        <figcaption class="cycle-caption">A practical cycle, ready<br>to be adapted and repeated.</figcaption>
+      </figure>
+    </section>
+    <div class="chapter-opening-quote data-opening"><p>The purpose of a framework is to help a teacher make thoughtful choices. KNOT offers four questions to carry from planning into the classroom and assessment.</p></div>
+    <div class="chapter-layout data-layout">
+      <aside class="chapter-nav" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#framework"><span>14.1</span><strong>The four KNOT moves</strong></a>
+        <a href="#lesson-plan"><span>14.2</span><strong>Plan a lesson</strong></a>
+        <a href="#assessment"><span>14.3</span><strong>Assessment in the cycle</strong></a>
+        <a href="#classroom"><span>14.4</span><strong>In the classroom</strong></a>
+        <a href="#adapt"><span>14.5</span><strong>Adapt and revisit</strong></a>
+      </aside>
+      <article class="chapter-content">
+        <section id="framework">
+          <p class="section-label">14.1 · The four KNOT moves</p>
+          <h2>Four moves for a thoughtful class</h2>
+          <div class="principle-box framework-definition"><strong>KNOT is a practice-oriented, evidence-informed framework for designing PBL-CT classroom experiences that support knowledge construction.</strong> It guides teachers through four flexible moves: Kick off, Navigate, Observe, and Tie back.</div>
+          <p>The philosophy of <em>Tied, Tried, Retied</em> clarifies the movement: ideas meet a meaningful problem, are tested through thinking and evidence, and prior learning carries forward. The four moves connect teacher decisions with learner actions. They are flexible prompts, not fixed stages; teachers can adapt an activity in response to student thinking.</p>
+          <figure class="final-knot-figure" aria-labelledby="final-knot-caption">
+            <div class="final-knot-scroll" tabindex="0" role="region" aria-label="Scrollable KNOT Framework diagram">
+              <img class="framework-diagram" src="./images/knot-framework.svg" alt="KNOT Framework: Tied, Tried, Retied. Four teacher moves, Kick off, Navigate, Observe, and Tie back, are paired with learner actions. Liminality is shown as a lens across Navigate and Observe. Prior learning carries forward.">
+            </div>
+            <figcaption id="final-knot-caption"><strong>Figure 14.1 · The KNOT Framework.</strong> The four teacher moves are paired with learner actions. <em>Tied, Tried, Retied</em> expresses the guiding philosophy: ideas meet a problem, are tested through thinking, and prior learning carries forward. The dashed lens marks liminality across Navigate and Observe, not a fixed stage.</figcaption>
+          </figure>
+          <figure class="final-quote"><blockquote>“A meaningful problem starts the learning. The real work is helping students make sense of it, notice what their thinking shows, and carry what they understand into what comes next.”</blockquote><figcaption>A concise statement of the central insight I take from this work.</figcaption></figure>
+          <h3>How the theories come together</h3>
+          <p>KNOT is a synthesis of ideas that play different roles. Dewey helps explain learning through inquiry and reflection. Barrows describes the problem-based learning structure and the teacher's facilitation role. Wing explains the kind of problem-formulating and solution-building thinking CT brings. Meyer and Land offer a lens for interpreting liminal moments around threshold concepts. These are not four interchangeable theories, and none alone is KNOT.</p>
+          <div class="theory-map-wrap">
+            <table class="theory-map">
+              <thead><tr><th>Grounding</th><th>What it contributes</th><th>Where it informs KNOT</th></tr></thead>
+              <tbody>
+                <tr><td><a href="https://pure.mpg.de/pubman/item/item_2316308/component/file_2316307/Dewey_1910_How_we_think.pdf">John Dewey · reflective inquiry</a></td><td>A felt difficulty can prompt inquiry. Learners consider ideas, seek evidence, and reflect on what follows from their thinking.</td><td><strong>Kick off</strong> gives inquiry a meaningful question. <strong>Tie back</strong> asks learners to examine what they found and carry it into further experience.</td></tr>
+                <tr><td><a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2923.1986.tb01386.x">Howard Barrows · problem-based learning</a></td><td>PBL is not one fixed method. Its problem, learner activity, and tutor role can be designed in different ways. In KNOT, the problem gives a reason to learn and the teacher guides rather than simply supplies answers.</td><td><strong>Kick off</strong> situates learning in a problem. <strong>Observe</strong> includes facilitation and support as learners investigate.</td></tr>
+                <tr><td><a href="https://doi.org/10.1145/1118178.1118215">Jeannette Wing · computational thinking</a></td><td>CT concerns formulating problems and representing solutions so they can be carried out by an information-processing agent. It is broader than writing code.</td><td><strong>Navigate</strong> makes problem formulation and reasoning practices visible, such as decomposition, abstraction, pattern recognition, algorithm design, and checking.</td></tr>
+                <tr><td><a href="https://www.sun.ac.za/english/Documents/Language/Threshold_Concepts__and_Troublesome_Knowledge%201_by_Ray_Land.pdf">Meyer and Land · threshold concepts and liminality</a></td><td>Liminality describes a possible in-between state as a learner works with troublesome knowledge around a threshold concept. It draws attention to partial understanding and transitions.</td><td>Liminality is a lens across KNOT, especially when teachers <strong>Observe</strong> students' thinking and decide what support may help. It is not a fixed stage, and not every difficulty is evidence of a threshold concept.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The theories give KNOT its intellectual grounding; the study gives the framework its evidence and practical emphasis. Student accounts of connecting topics, tracing and practising, understanding how algorithms developed, and explaining ideas to peers informed the focus on visible reasoning and responsive teaching. The theories explain why these design choices matter; the combined course evidence shows how they appeared in practice and how they supported knowledge construction.</p>
+          <div class="principle-box"><strong>The synthesis:</strong> Dewey helps explain inquiry and continuity; Barrows grounds the problem-based learning design; Wing informs the thinking students use to work through problems; Meyer and Land help interpret liminal experiences. KNOT brings these strands into a recursive teacher-facing design: pose a problem, notice student reasoning, respond to what the evidence shows, and shape the next learning opportunity.</div>
+          <div class="aha-card">
+            <span class="aha-label">The Aha from this study</span>
+            <h3>A meaningful problem is only the beginning. The learning happens in the connections that follow.</h3>
+            <p>I learned that a class is not KNOT simply because it includes a real-world example, a group task, or an algorithm. The important design work is to connect the problem to students' reasoning, make their changing ideas visible, respond with the support they need, and use evidence of their learning to decide what comes next.</p>
+            <div class="aha-steps" aria-label="The connected learning loop">
+              <div><strong>Problem</strong><span>Gives students a reason to inquire.</span></div>
+              <div><strong>Student thinking</strong><span>Shows how they are making sense of it.</span></div>
+              <div><strong>Teacher response</strong><span>Offers a next step, resource, question, or challenge.</span></div>
+              <div><strong>Evidence and next question</strong><span>Shows what to revisit, extend, or connect next.</span></div>
+            </div>
+            <p>The cycle matters more than any single activity. This is the practical meaning of <em>Tied, Tried, Retied</em>: ideas are connected, examined, and connected again as the learning moves forward.</p>
+          </div>
+          <p>The course materials helped make this insight visible. The cafe case begins with slow answers to repeated questions; the invitation task asks students to model a local route and its constraints; lab activities ask students to group familiar situations, settle shared expenses, write code, and compare proposed solutions. The survey adds students’ perspective: 120 of 124 respondents agreed or strongly agreed that the project helped them see how algorithms relate to real-world systems, and open responses describe applying graph theory to city-road planning. These sources support a practical emphasis on what students do with a problem and how teachers can see their reasoning, not simply whether a lesson contains a real-world story.</p>
+          <figure class="study-quote"><blockquote>“The problem solving activities and case studies that actually needed me to use what I've learned instead of just mugging up or creating an answer out of thin air.”</blockquote><figcaption>A student response about the value of using learned ideas in activities and case studies rather than memorising; open response to survey item 31.</figcaption></figure>
+          <figure class="study-quote"><blockquote>“...now i have understood the reason behind it... I just thought it in terms of loops but i got to know the actual mathematical reason behind it.”</blockquote><figcaption>A student describing how a sorting loop and time-complexity explanation became meaningful; excerpt from open response to survey item 16.</figcaption></figure>
+          <div class="principle-box"><strong>What this study shows:</strong> in this course, knowledge construction was visible when learners connected concepts, made their reasoning visible, worked through uncertainty, and explained or applied their understanding. KNOT's practical contribution is to connect these learner moves with the teacher's response: use evidence of student thinking to decide what support, feedback, or learning opportunity should come next. This principle is grounded in the combined survey, student accounts, course scores, project evaluations, and instructional materials.</div>
+          <p>This is not a claim that KNOT is the first PBL–CT framework. A review of work published from 2017 to 2021 found few explicit frameworks for integrating PBL and CT, while newer studies have proposed related integrated approaches. KNOT is presented here as the evidence-informed synthesis developed through this study, with its particular emphasis on knowledge construction, liminality as a lens, and the teacher's use of learning evidence to shape what happens next. See the <a href="https://www.sciencedirect.com/science/article/pii/S0023969022000224">PBL–CT review</a> and a <a href="https://www.sciencedirect.com/science/article/pii/S1871187126000052">recent computational-thinking framework</a>.</p>
+          <div class="principle-box"><strong>About the name:</strong> KNOT continues to mean <em>Knowledge construction, Not a One-time Transformation</em>. “Kick off, Navigate, Observe, Tie back” is a classroom planning mnemonic that translates this philosophy into everyday teacher decisions. It is a practical aid, not a replacement definition or a claim that these are four separate learning stages.</div>
+          <div class="knot-steps">
+            <article class="knot-step"><span class="knot-letter">K</span><h3>Kick off with a meaningful problem</h3><p>Give learners a question, situation, case, or challenge that makes the idea worth exploring. Connect it to what they know and invite them to notice what they need to find out.</p><p class="teacher-prompt"><strong>Ask:</strong> What will make students curious enough to begin?</p></article>
+            <article class="knot-step"><span class="knot-letter">N</span><h3>Navigate with thinking tools</h3><p>Help learners work through the problem. They might break it into parts, find patterns, decide what matters, build a representation, develop a procedure, or compare possible approaches.</p><p class="teacher-prompt"><strong>Ask:</strong> What thinking should students practise and make visible?</p></article>
+            <article class="knot-step"><span class="knot-letter">O</span><h3>Observe learning and offer support</h3><p>Listen to explanations and look at attempts while learning is happening. Offer examples, prompts, resources, dialogue, practice, and feedback where they can help students take a next step.</p><p class="teacher-prompt"><strong>Ask:</strong> What are students showing, and what support would help now?</p></article>
+            <article class="knot-step"><span class="knot-letter">T</span><h3>Tie understanding to what comes next</h3><p>Invite learners to explain, check, revise, reflect, or apply an idea in a changed context. Use what they show to decide what should be revisited or opened up in the next class.</p><p class="teacher-prompt"><strong>Ask:</strong> What can students now explain or do, and what question follows?</p></article>
+          </div>
+          <div class="principle-box"><strong>The connection to KNOT's philosophy:</strong> learners make and remake connections as they work on meaningful problems. The teacher designs the conditions for that work, attends to uncertainty, and uses evidence of student thinking to shape what happens next.</div>
+        </section>
+
+        <section id="lesson-plan">
+          <p class="section-label">14.2 · A lesson plan that fits on one page</p>
+          <h2>Plan the experience before choosing the activities</h2>
+          <p>A KNOT lesson plan starts with what learners should understand and how they might show it. Then the teacher chooses a problem, thinking practices, support, and assessment that align. This short template can be used for one class, a lab, a project session, or a sequence of lessons.</p>
+          <div class="plan-card">
+            <h3>KNOT lesson planning card</h3>
+            <div class="plan-grid">
+              <div class="plan-item"><strong>K · Kick off</strong><span>Learning intention; meaningful opening problem; what learners may already know; the question they will investigate.</span></div>
+              <div class="plan-item"><strong>N · Navigate</strong><span>Key concept or skill; thinking tools or CT practice; what students will do, make, discuss, or represent.</span></div>
+              <div class="plan-item"><strong>O · Observe</strong><span>Likely sticking points; prompts and resources; peer or teacher support; a checkpoint to notice understanding.</span></div>
+              <div class="plan-item"><strong>T · Tie back</strong><span>Evidence of learning; criteria for a good explanation or solution; reflection or application; the next connection.</span></div>
+            </div>
+          </div>
+          <p>Before class, complete this sentence: <em>By the end, students will be able to ___, and I will see evidence of it when they ___.</em> If the learning intention and evidence do not match, adjust the task or assessment before teaching.</p>
+          <h3>A KNOT reading of the Hungry Loop Cafe case</h3>
+          <p>The original case asks students to help a cafe whose repeated searches through growing price records make answers slow. It asks them to propose how the data might be organized for frequent and range-based questions. The table below shows one way a teacher could plan this case through KNOT. The teacher prompts and evidence are a planning interpretation of the source case, not a claim that each step was delivered exactly this way in the study.</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Planning the Hungry Loop Cafe case through KNOT"><table><caption>Example lesson plan · from repeated data queries to a justified design</caption><thead><tr><th scope="col">KNOT move</th><th scope="col">Teacher move</th><th scope="col">Evidence to notice</th></tr></thead><tbody>
+            <tr><td><strong>Kick off</strong></td><td>Present the cafe's question: what was the cheapest burger price between 9 AM and 5 PM, and why has the answer become slow?</td><td>Students identify the user question, the data involved, and what the current system is repeating.</td></tr>
+            <tr><td><strong>Navigate</strong></td><td>Ask pairs to list other frequent questions, sketch how the hourly records could be organized, and compare a repeated full scan with a prepared way to answer a range query.</td><td>Students make assumptions visible, identify useful operations, and explain how their representation supports those operations.</td></tr>
+            <tr><td><strong>Observe</strong></td><td>Use a small sample to trace each proposal. Ask what happens as the data grows and what becomes harder when prices are updated. Offer a counterexample or prompt where students need it.</td><td>Notice whether students can trace the method, reason about update and query costs, and revise an approach when its limits appear.</td></tr>
+            <tr><td><strong>Tie back</strong></td><td>Ask students to justify their choice, connect it to the relevant data-structure and efficiency concepts, and explain when another representation might be preferable.</td><td>Collect a short explanation or exit response showing what students can now justify, what remains uncertain, and what question should come next.</td></tr>
+          </tbody></table></div>
+        </section>
+
+        <section id="assessment">
+          <p class="section-label">14.3 · Assessment belongs throughout</p>
+          <h2>Assessment is part of the learning, not only the last step</h2>
+          <p>A KNOT class gathers evidence at several points. Assessment helps students see what is taking shape and helps the teacher make the next decision. It can be informal or formal, individual or collaborative, written, spoken, practical, or a combination, as long as it matches the learning intention.</p>
+          <div class="assessment-loop" aria-label="Assessment cycle: before learning, during learning, at the end, and after feedback">
+            <div><strong>Before · Find a starting point</strong><span>Ask an opening question, use a short diagnostic prompt, or invite students to predict. Use responses to surface prior ideas and misconceptions.</span></div><i aria-hidden="true">→</i>
+            <div><strong>During · Notice and respond</strong><span>Check a trace, diagram, explanation, worked example, discussion, or draft. Give feedback students can use while they can still revise.</span></div><i aria-hidden="true">→</i>
+            <div><strong>At the end · Gather evidence</strong><span>Use a problem, performance, explanation, or reflection aligned with the intention. Make success criteria visible before students begin.</span></div><i aria-hidden="true">→</i>
+            <div><strong>After · Decide what comes next</strong><span>Review patterns in the evidence. Revisit, extend, regroup, or introduce a new context. Let students act on feedback where possible.</span></div>
+          </div>
+          <div class="example-box"><strong>Keep the assessment aligned.</strong> If the intention is for students to explain why an algorithm works, a score for producing correct code alone is not enough. Ask for a trace, justification, or comparison as well. If the intention is application, assess how students connect the concept to the new problem, not only whether they can repeat a familiar example.</div>
+          <p>For each assessment, decide three things: <strong>what evidence</strong> will show the learning, <strong>what criteria</strong> will make quality understandable, and <strong>what response</strong> the evidence will prompt from teacher or learner. A mark can summarize performance, but feedback and next steps make assessment useful for learning.</p>
+        </section>
+
+        <section id="classroom">
+          <p class="section-label">14.4 · What every KNOT class should make room for</p>
+          <h2>Keep the essentials, adapt the activity</h2>
+          <p>The specific task will vary by subject, age, time, and context. The recurring essentials are a clear purpose, active student thinking, support, evidence, and a way to connect learning forward.</p>
+          <div class="principle-grid">
+            <div><strong>A reason to learn</strong><span>Students can see the question, challenge, or purpose behind the work.</span></div>
+            <div><strong>Thinking students can show</strong><span>Learners explain choices, represent ideas, test possibilities, or make a process visible.</span></div>
+            <div><strong>Support within reach</strong><span>Examples, tools, feedback, resources, peers, and the teacher are available without doing the thinking for students.</span></div>
+            <div><strong>Evidence tied to the intention</strong><span>Assessment checks the understanding or capability the lesson set out to develop.</span></div>
+            <div><strong>Time to reflect or revise</strong><span>Students can check what changed, what remains uncertain, and what they might try next.</span></div>
+            <div><strong>A next connection</strong><span>The lesson links to a later idea, another context, or a question worth carrying forward.</span></div>
+          </div>
+        </section>
+
+        <section id="adapt">
+          <p class="section-label">14.5 · Use, reflect, and revisit</p>
+          <h2>KNOT is a guide, not a recipe</h2>
+          <p>Not every class needs a large project or a long investigation. A short classroom question, a worked example students critique, a lab task, or a project milestone can all follow the KNOT moves. The scale changes; the intention to make learning purposeful, visible, supported, and connected remains.</p>
+          <p>After the class, a teacher can reflect with four questions:</p>
+          <ol>
+            <li>What helped students enter the problem?</li>
+            <li>What did their work reveal about their thinking?</li>
+            <li>Where did they need support, and how did they use it?</li>
+            <li>What should I revisit, extend, or connect next?</li>
+          </ol>
+          <p>These questions return the teacher to the same cycle as the learners. Planning shapes the experience; student evidence reshapes the next plan. That is how KNOT's philosophy becomes a practical habit of teaching.</p>
+          <div class="closing-card"><strong>In one line:</strong> Kick off with a meaningful problem, help learners navigate it with useful thinking tools, observe and support their learning, then tie what they understand to evidence and what comes next.</div>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer chapter-footer"><span>KNOT <span class="footer-dot" aria-hidden="true">·</span> Learning, revisited.</span><a href="./chapter-15.html">Chapter 15 · Conclusion <span aria-hidden="true">→</span></a></footer>
+</body>
+</html>
