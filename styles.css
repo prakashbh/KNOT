@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --paper: #f7f3e9;
+  --paper: #ffffff;
   --paper-light: #fffdf7;
   --ink: #292e27;
   --muted: #686c5e;
@@ -21,7 +21,6 @@ body {
   margin: 0;
   color: var(--ink);
   background-color: var(--paper);
-  background-image: repeating-linear-gradient(0deg, transparent 0, transparent 31px, #887c5910 32px);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
 }
@@ -156,7 +155,7 @@ h2 { max-width: 350px; font-size: 34px; line-height: 1.3; }
 .foreword-page > .text-link { margin-top: 0; }
 .brand-mark span { display: none; }
 
-.chapter-page { background-image: repeating-linear-gradient(0deg, transparent 0, transparent 31px, #887c5910 32px); }
+.chapter-page { background-color: #ffffff; }
 .chapter-hero { width: min(1120px, calc(100% - 80px)); min-height: 420px; margin: 0 auto; padding: 70px 0 76px; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); align-items: center; gap: 56px; border-bottom: 1px solid var(--line); }
 .chapter-hero-copy { max-width: 620px; }
 .hero-kicker { margin-left: 7px; color: var(--muted); font-weight: 500; letter-spacing: .06em; }
@@ -584,7 +583,7 @@ h2 { max-width: 350px; font-size: 34px; line-height: 1.3; }
 .chapter-nine .data-detail .data-table-scroll { margin-inline: 15px; }
 
 /* Contents page · a guided path through the research */
-.contents-page { background-image: radial-gradient(ellipse at 82% 6%, #e6eadb80 0, transparent 31rem), repeating-linear-gradient(0deg, transparent 0, transparent 31px, #887c5910 32px); }
+.contents-page { background-color: #ffffff; }
 .contents-main { width: min(1060px, calc(100% - 80px)); margin-inline: auto; padding: 58px 0 90px; }
 .contents-hero { display: grid; grid-template-columns: minmax(0,1fr) 230px; gap: 56px; align-items: center; padding: 19px 0 48px; }
 .contents-hero-copy { max-width: 730px; }
